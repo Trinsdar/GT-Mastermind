@@ -1,0 +1,15 @@
+# Timestamps
+overrides/config/buildcraft/detailed.properties
+overrides/config/codechicken/supporters.marker
+overrides/config/codechicken/supporters.json
+overrides/config/splash.properties
+overrides/config/ichunutil.cfg
+
+# Saved player data (JEI search string, etc)
+overrides/config/buildcraft/gui.json
+overrides/config/jei/worldSettings.cfg
+
+# Other misc data
+overrides/config/vanillafix/
+overrides/config/XearoWaypoints/
+overrides/config/XearoWorldMap/

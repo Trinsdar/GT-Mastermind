@@ -1,0 +1,30 @@
+[
+  {
+    "internalOreName": "ic2:blockmetal",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/thermalfoundation/copper",
+    "lightValue": -1,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "ic2:blockmetal",
+    "meta": 1,
+    "overlay": "undergroundbiomes:blocks/overlays/thermalfoundation/tin",
+    "lightValue": -1,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "ic2:blockmetal",
+    "meta": 2,
+    "overlay": "undergroundbiomes:blocks/overlays/custom/uranium",
+    "lightValue": -1,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "ic2:blockmetal",
+    "meta": 3,
+    "overlay": "undergroundbiomes:blocks/overlays/thermalfoundation/silver",
+    "lightValue": -1,
+    "oreDirectories": []
+  }
+]
