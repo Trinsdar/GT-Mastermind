@@ -9,31 +9,35 @@ val siliconCell = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidsil
 mods.techreborn.blastFurnace.addRecipe(siliconPlate, <techreborn:dynamiccell>*2, siliconCell*2, null, 1000, 128, 1500);
 
 // Sunnarium Plate
-mods.techreborn.rollingMachine.addShaped(<advsolars:sunnarium_plate>, [
+recipes.remove(<advancedsolars:sunnariumalloy>);
+mods.techreborn.rollingMachine.addShaped(<advancedsolars:sunnariumalloy>, [
 	[<ore:dustSmallDiamond>, <ore:ingotUranium>, <ore:dustSmallDiamond>],
 	[<minecraft:glowstone_dust>, <techreborn:uumatter>, <minecraft:glowstone_dust>],
 	[<ore:dustSmallDiamond>, <ore:ingotIridium>, <ore:dustSmallDiamond>]
 ]);
 
 // Sunnarium
-recipes.addShaped("sunnarium", <advsolars:sunnarium>, [
+recipes.remove(<advancedsolars:sunnarium>);
+recipes.addShaped("sunnarium", <advancedsolars:sunnarium>, [
 	[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>],
 	[<techreborn:uumatter>, <techreborn:uumatter>, <techreborn:uumatter>],
 	[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>]
 ]);
 
 // Enriched Sunnarium
-mods.techreborn.rollingMachine.addShaped(<advsolars:sunnarium_enriched>, [
-	[<minecraft:glowstone>, <ore:ingotUranium>, <minecraft:glowstone>],
-	[<ore:ingotUranium>, <advsolars:sunnarium>, <ore:ingotUranium>],
-	[<minecraft:glowstone>, <ore:ingotUranium>, <minecraft:glowstone>]
+recipes.remove(<advancedsolars:enrichedsunnarium>);
+mods.techreborn.rollingMachine.addShaped(<advancedsolars:enrichedsunnarium>, [
+	[<minecraft:glowstone>, <advancedsolars:irradianturanium>, <minecraft:glowstone>],
+	[<advancedsolars:irradianturanium>, <advancedsolars:sunnarium>, <advancedsolars:irradianturanium>],
+	[<minecraft:glowstone>, <advancedsolars:irradianturanium>, <minecraft:glowstone>]
 ]);
 
 // Enriched Sunnarium Plate
-mods.techreborn.rollingMachine.addShaped(<advsolars:sunnarium_enriched_plate>, [
-	[<ore:plateIridiumAlloy>, <advsolars:sunnarium_enriched>, <ore:plateIridiumAlloy>],
-	[<advsolars:sunnarium_enriched>, <advsolars:sunnarium_enriched>, <advsolars:sunnarium_enriched>],
-	[<ore:plateIridiumAlloy>, <advsolars:sunnarium_enriched>, <ore:plateIridiumAlloy>]
+recipes.remove(<advancedsolars:enrichedsunnariumalloy>);
+mods.techreborn.rollingMachine.addShaped(<advancedsolars:enrichedsunnariumalloy>, [
+	[<ore:plateIridiumAlloy>, <advancedsolars:enrichedsunnarium>, <ore:plateIridiumAlloy>],
+	[<advancedsolars:enrichedsunnarium>, <advancedsolars:enrichedsunnarium>, <advancedsolars:enrichedsunnarium>],
+	[<ore:plateIridiumAlloy>, <advancedsolars:enrichedsunnarium>, <ore:plateIridiumAlloy>]
 ]);
 
 // Expensive Basic Solars (~5 daylight hours payback)
@@ -49,13 +53,13 @@ recipes.addShaped("techreborn_solar_panel_basic", <techreborn:solar_panel:0>, [
 recipes.remove(<techreborn:solar_panel:1>);
 recipes.addShaped("techreborn_solar_panel_hybrid", <techreborn:solar_panel:1>, [
 	[<ore:glassReinforced>, <ore:glassReinforced>, <ore:glassReinforced>],
-	[<ore:circuitAdvanced>, <advsolars:sunnarium_plate>, <ore:circuitAdvanced>],
+	[<ore:circuitAdvanced>, <advancedsolars:sunnariumalloy>, <ore:circuitAdvanced>],
 	[<ore:machineBlockAdvanced>, <techreborn:solar_panel:0>, <ore:machineBlockAdvanced>]
 ]);
 
 // Expensive Advanced Solars
 
-val sunnariumE = <advsolars:sunnarium_enriched>;
+val sunnariumE = <advancedsolars:enrichedsunnarium>;
 
 recipes.remove(<techreborn:solar_panel:2>);
 recipes.addShaped("techreborn_solar_panel_advanced", <techreborn:solar_panel:2>, [
@@ -67,7 +71,7 @@ recipes.addShaped("techreborn_solar_panel_advanced", <techreborn:solar_panel:2>,
 // Expensive Ultimate Solars
 
 val coalChunk = <ic2:itemmisc:252>;
-val plateSE = <advsolars:sunnarium_enriched_plate>;
+val plateSE = <advancedsolars:sunnariumalloy>;
 
 recipes.remove(<techreborn:solar_panel:3>);
 recipes.addShaped("techreborn_solar_panel_ultimate", <techreborn:solar_panel:3>, [

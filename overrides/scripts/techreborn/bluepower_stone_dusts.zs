@@ -9,11 +9,11 @@ val dustMarble = <techreborn:dust:32>;
 val dustCalcite = <techreborn:dust:8>;
 
 // Inputs
-val basalt = <projectred-exploration:stone:3>;
-val basaltCobble = <projectred-exploration:stone:2>;
-val basaltBrick = <projectred-exploration:stone:4>;
-val marble = <projectred-exploration:stone:0>;
-val marbleBrick = <projectred-exploration:stone:1>;
+val basalt = <bluepower:basalt>;
+val basaltCobble = <bluepower:basalt_cobble>;
+val basaltBrick = <bluepower:basalt_brick>;
+val marble = <bluepower:marble>;
+val marbleBrick = <bluepower:marble_brick>;
 
 // Recipe additions - Basalt
 mods.thermalexpansion.Pulverizer.addRecipe(dustBasalt, basalt, 4000, dustFlint, 10);

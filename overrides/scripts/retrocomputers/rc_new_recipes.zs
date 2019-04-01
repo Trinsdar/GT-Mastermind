@@ -1,10 +1,10 @@
 // Purpose: Make the RetroComputers recipes more like old RedPower 2.
 
-val redSilicon = <projectred-core:resource_item:320>;
-val orangeIllumar = <projectred-core:resource_item:501>;
-val copperCoil = <projectred-core:resource_item:400>;
-val goldCoil = <projectred-core:resource_item:402>;
-val motor = <projectred-core:resource_item:410>;
+val redSilicon = <bluepower:red_doped_wafer>;
+val orangeIllumar = <bluepower:lumar:1>;
+val copperCoil = <bluepower:copper_wire>;
+val goldCoil = <minecraft:gold_ingot>; // Using gold ingots for now.
+val motor = <quacklib:component:27>; // Using item from quacklib for now.
 
 recipes.remove(<retrocomputers:terminal>);
 recipes.addShaped("retrocomputers_terminal", <retrocomputers:terminal>, [

@@ -25,11 +25,9 @@ recipes.addShaped("item_tube_brass", <teckle:tube.item>*8, [
 	[<ore:ingotBrass>, <minecraft:glass>, <ore:ingotBrass>]
 ]);
 
-mods.jei.JEI.removeAndHide(<teckle:alloyfurnace>);
-
-val redSilicon = <projectred-core:resource_item:320>;
-val electroSilicon = <projectred-core:resource_item:342>;
-val electrotineAlloyIngot = <projectred-core:resource_item:104>;
+val redSilicon = <bluepower:red_doped_wafer>;
+val blueSilicon = <bluepower:blue_doped_wafer>;
+val blueAlloyIngot = <bluepower:blue_alloy_ingot>;
 
 recipes.remove(<teckle:filter>);
 recipes.addShaped("teckle_filter", <teckle:filter>, [
@@ -40,8 +38,8 @@ recipes.addShaped("teckle_filter", <teckle:filter>, [
 
 recipes.remove(<teckle:sortingmachine>);
 recipes.addShaped("teckle_sorting_machine", <teckle:sortingmachine>, [
-	[<minecraft:iron_ingot>, electroSilicon, <minecraft:iron_ingot>],
-	[electrotineAlloyIngot, <teckle:filter>, electrotineAlloyIngot],
+	[<minecraft:iron_ingot>, blueSilicon, <minecraft:iron_ingot>],
+	[blueAlloyIngot, <teckle:filter>, blueAlloyIngot],
 	[<minecraft:iron_ingot>, redSilicon, <minecraft:iron_ingot>]
 ]);
 
@@ -58,20 +56,20 @@ recipes.addShaped("red_alloy_block", <teckle:compacted_metal:1>, [
 
 recipes.remove(<teckle:compacted_metal:2>);
 recipes.addShaped("blue_alloy_block", <teckle:compacted_metal:2>, [
-	[electrotineAlloyIngot, electrotineAlloyIngot, electrotineAlloyIngot],
-	[electrotineAlloyIngot, electrotineAlloyIngot, electrotineAlloyIngot],
-	[electrotineAlloyIngot, electrotineAlloyIngot, electrotineAlloyIngot]
+	[blueAlloyIngot, blueAlloyIngot, blueAlloyIngot],
+	[blueAlloyIngot, blueAlloyIngot, blueAlloyIngot],
+	[blueAlloyIngot, blueAlloyIngot, blueAlloyIngot]
 ]);
 
 
 mods.techreborn.alloySmelter.removeRecipe(<teckle:ingot:1>);
 recipes.remove(<teckle:ingot:1>);
-recipes.addShapeless("red_alloy_ingot_from_block", <projectred-core:resource_item:103>*9, [
+recipes.addShapeless("red_alloy_ingot_from_block", <bluepower:red_alloy_ingot>*9, [
 	<teckle:compacted_metal:1>
 ]);
 
 recipes.remove(<teckle:ingot:2>);
-recipes.addShapeless("blue_alloy_ingot_from_block", <projectred-core:resource_item:104>*9, [
+recipes.addShapeless("blue_alloy_ingot_from_block", <bluepower:blue_alloy_ingot>*9, [
 	<teckle:compacted_metal:2>
 ]);
 
