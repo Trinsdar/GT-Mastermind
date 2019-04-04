@@ -1,4 +1,4 @@
-// Remove | Ingots=>Block | {Copper / Bronze / Silver}
+@ic2// Remove | Ingots=>Block | {Copper / Bronze / Silver}
 // Keep   | Ingots=>Block | Uranium
 // Remove | Ingots=>Block | {Charcoal, Tin}
 // Remove | Block=>Ingots | {Machine/Refined Iron, Copper, Tin, Bronze, Silver}

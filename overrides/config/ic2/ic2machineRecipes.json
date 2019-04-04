@@ -212,7 +212,24 @@
   "Corrupted Essence": true,
   "Zinc Dust_3": true,
   "Teslatite": true,
-  "Forcicium": true
+  "Forcicium": true,
+  "ic2exprecipe_Teslatite_": true,
+  "ic2exprecipe_Amber_": true,
+  "Lead Dust_3": true,
+  "Electrum Dust_2": true,
+  "Invar Dust_2": true,
+  "Lead Dust_4": true,
+  "Nickel Dust_2": true,
+  "Platinum Dust_2": true,
+  "Steel Dust_2": true,
+  "Sulfur Dust": true,
+  "Saltpeter Dust": true,
+  "Constantan Dust_1": true,
+  "Aluminium Dust_3": true,
+  "Aluminium Dust_4": true,
+  "Nickel Dust_3": true,
+  "Platinum Dust_3": true,
+  "Coal Dust_3": true
  },
  "extractor": {
   "Coal": true,
@@ -247,7 +264,9 @@
   "Rose Red_3": true,
   "Ruby": true,
   "Sapphire": true,
-  "Olivine": true
+  "Olivine": true,
+  "ic2exprecipe_Quicksilver_": true,
+  "ic2exprecipe_Blaze Powder_": true
  },
  "compressor": {
   "Sandstone": true,
@@ -273,7 +292,7 @@
   "Obsidian Blade": true,
   "Advanced Alloy": true,
   "CF Pellet": true,
-  "§r§bHigh Quality Hemp Oil": true,
+  "�r�bHigh Quality Hemp Oil": true,
   "uraniumrodcompressing": true,
   "Lead Block": true,
   "Refined Iron Block": true,
@@ -411,7 +430,8 @@
   "Graphite Ingot": true,
   "Graphite Ingot_1": true,
   "Industrial Diamond_1": true,
-  "pipeSealant": true
+  "pipeSealant": true,
+  "§r§bHigh Quality Hemp Oil": true
  },
  "massfabricatorAmplifier": {
   "ScrapAmplifier": true,

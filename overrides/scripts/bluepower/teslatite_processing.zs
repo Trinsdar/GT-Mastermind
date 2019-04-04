@@ -5,7 +5,6 @@ val ore = <bluepower:teslatite_ore>;
 val dust = <bluepower:teslatite_dust>;
 
 // Redstone Furnace => 4 [Replace]
-mods.thermalexpansion.RedstoneFurnace.removeRecipe(ore);
 mods.thermalexpansion.RedstoneFurnace.addRecipe(dust*4, ore, 2000);
 
 // Pulverizer => 6 [Replace]
