@@ -13,3 +13,8 @@ overrides/config/jei/worldSettings.cfg
 overrides/config/vanillafix/
 overrides/config/XearoWaypoints/
 overrides/config/XearoWorldMap/
+overrides/config/XaeroWorldMap/testing_null/
+
+overrides/config/XaeroWorldMap/
+
+overrides/config/thaumicjei_itemstack_aspects.json
