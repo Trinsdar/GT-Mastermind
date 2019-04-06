@@ -9,7 +9,6 @@ val siliconCell = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "fluidsil
 mods.techreborn.blastFurnace.addRecipe(siliconPlate, <techreborn:dynamiccell>*2, siliconCell*2, null, 1000, 128, 1500);
 
 // Sunnarium Plate
-recipes.remove(<advancedsolars:sunnariumalloy>);
 mods.techreborn.rollingMachine.addShaped(<advancedsolars:sunnariumalloy>, [
 	[<ore:dustSmallDiamond>, <ore:ingotUranium>, <ore:dustSmallDiamond>],
 	[<minecraft:glowstone_dust>, <techreborn:uumatter>, <minecraft:glowstone_dust>],
@@ -17,7 +16,6 @@ mods.techreborn.rollingMachine.addShaped(<advancedsolars:sunnariumalloy>, [
 ]);
 
 // Sunnarium
-recipes.remove(<advancedsolars:sunnarium>);
 recipes.addShaped("sunnarium", <advancedsolars:sunnarium>, [
 	[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>],
 	[<techreborn:uumatter>, <techreborn:uumatter>, <techreborn:uumatter>],
@@ -25,7 +23,6 @@ recipes.addShaped("sunnarium", <advancedsolars:sunnarium>, [
 ]);
 
 // Enriched Sunnarium
-recipes.remove(<advancedsolars:enrichedsunnarium>);
 mods.techreborn.rollingMachine.addShaped(<advancedsolars:enrichedsunnarium>, [
 	[<minecraft:glowstone>, <advancedsolars:irradianturanium>, <minecraft:glowstone>],
 	[<advancedsolars:irradianturanium>, <advancedsolars:sunnarium>, <advancedsolars:irradianturanium>],
@@ -33,7 +30,6 @@ mods.techreborn.rollingMachine.addShaped(<advancedsolars:enrichedsunnarium>, [
 ]);
 
 // Enriched Sunnarium Plate
-recipes.remove(<advancedsolars:enrichedsunnariumalloy>);
 mods.techreborn.rollingMachine.addShaped(<advancedsolars:enrichedsunnariumalloy>, [
 	[<ore:plateIridiumAlloy>, <advancedsolars:enrichedsunnarium>, <ore:plateIridiumAlloy>],
 	[<advancedsolars:enrichedsunnarium>, <advancedsolars:enrichedsunnarium>, <advancedsolars:enrichedsunnarium>],

@@ -1,66 +1,5 @@
-@ic2// Remove | Ingots=>Block | {Copper / Bronze / Silver}
-// Keep   | Ingots=>Block | Uranium
-// Remove | Ingots=>Block | {Charcoal, Tin}
-// Remove | Block=>Ingots | {Machine/Refined Iron, Copper, Tin, Bronze, Silver}
-// Keep   | Block=>Ingots | Uranium
-// Remove | Block=>Ingots | Charcoal
-// Remove | Bronze Dust Mixing
-// Keep   | Log => Wood   | Rubber
-// Keep   | 2x Construction Foam Mixture
-// Keep   | 13x Pixel Foam Recipes
-// Remove | 3x Luminator Crafting
-// Modify | Reinforced Stone
 
-recipes.addShaped("reinforced_stone", <ic2:blockutility:2>*8, [
-	[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
-	[<minecraft:stone>, <ore:plateAdvancedAlloy>, <minecraft:stone>],
-	[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]
-]);
-
-// Remove | 2x Reinforced Glass
-// Keep   | Reinforced Door
-// Keep   | Rubber Sheet
-// Keep   | Scaffold
-// Modify | Iron Scaffold
-
-recipes.addShaped("iron_scaffold", <ic2:blockironscaffold>*16, [
-	[<ore:ingotRefinedIron>, <ore:ingotRefinedIron>, <ore:ingotRefinedIron>],
-	[null, <ore:fenceIron>, null],
-	[<ore:fenceIron>, null, <ore:fenceIron>]
-]);
-
-// Keep   | Iron Fence
-// Modify | Torch
-
-recipes.addShaped("sap_torch", <minecraft:torch>*4, [
-	[<techreborn:part:31>, null],
-	[<minecraft:stick>, null]
-]);
-
-// Keep   | Reinforced Brick
-// Modify | 2x Cracked Reinforced Stone
-
-mods.techreborn.grinder.addRecipe(<ic2:blockutility:6>, <ic2:blockutility:2>, 300, 20); // Reinforced Stone => Cracked Reinforced Stone
-
-// Remove | Clear Reinforced Glass
-// Modify | Iridium Stone
-
-val reinforcedStone = <ic2:blockutility:2>;
-recipes.addShaped("iridium_stone", <ic2:blockpersonal:8>, [
-	[reinforcedStone, reinforcedStone, reinforcedStone],
-	[reinforcedStone, <ore:plateIridiumAlloy>, reinforcedStone],
-	[reinforcedStone, reinforcedStone, reinforcedStone]
-]);
-
-// Modify | Advanced Comparator
-
-recipes.addShapeless("advanced_comparator", <ic2:advcomparator>, [
-	<minecraft:comparator>,
-	<ore:circuitBasic>
-]);
-
-// Keep   | Redstibe Comparator
-// Keep   | 2x Industrial TNT
+mods.ic2.Macerator.addRecipe(<ic2:blockutility:6>, <ic2:blockutility:2>); // Reinforced Stone => Cracked Reinforced Stone
 // Modify | Nuke
 
 val reenriched_uranium = <ic2:itemmisc:550>;
@@ -70,28 +9,6 @@ recipes.addShaped("nuke_hardmode", <ic2:blockexplosive:1>, [
 	[uranium_block, <ore:machineBlockAdvanced>, uranium_block],
 	[reenriched_uranium, <ore:circuitAdvanced>, reenriched_uranium]
 ]);
-
-// Keep   | Rail
-// Keep   | Piston
-// Keep   | Hopper
-// Modify | Sticky Pistonr
-
-recipes.addShaped("sap_sticky_piston", <minecraft:sticky_piston>, [
-	[<techreborn:part:31>],
-	[<minecraft:piston>]
-]);
-
-// Modify | Mining Pipe
-
-recipes.addShaped("mining_pipe", <ic2:blockminingpipe>*8, [
-	[<ore:ingotRefinedIron>, null, <ore:ingotRefinedIron>],
-	[<ore:ingotRefinedIron>, null, <ore:ingotRefinedIron>],
-	[<ore:ingotRefinedIron>, <techreborn:treetap>, <ore:ingotRefinedIron>]
-]);
-
-// Keep   | 2x Construction Foam Wall
-// Keep   | 2x Construction Foam Wool
-// Keep   | Cable Recipes
 // Modify | EU-Detector Cable
 
 recipes.addShaped("eu_detector_cable", <ic2:itemcable:11>, [
@@ -100,81 +17,29 @@ recipes.addShaped("eu_detector_cable", <ic2:itemcable:11>, [
 	[null, <minecraft:comparator>, null]
 ]);
 
-// Keep   | EU-Splitter Cable
-// Remove | Plasma Cable
-// Remove | 2x Generator
-
-recipes.addShaped("geothermal_generator", <ic2:blockgenerator:1>, [
-	[<ore:blockGlass>, <techreborn:dynamiccell>, <ore:blockGlass>],
-	[<ore:blockGlass>, <techreborn:dynamiccell>, <ore:blockGlass>],
-	[<ore:ingotRefinedIron>, <techreborn:solid_fuel_generator>, <ore:ingotRefinedIron>]
-]);
-
-// Remove | Water Mill, Solar Panel, Wind Mill
-// Modify | Nuclear Reactor
-
-recipes.addShaped("nuclear_reactor", <ic2:blockgenerator:5>, [
-	[null, <ore:circuitAdvanced>, null],
-	[<ic2:blockchambers:0>, <ic2:blockchambers:0>, <ic2:blockchambers:0>],
-	[null, <techreborn:solid_fuel_generator>, null]
-]);
-
-// Modify | Steam Reactor
-
-recipes.addShaped("steam_reactor", <ic2:blockgenerator:6>, [
-	[<ore:plateAdvancedAlloy>, <ore:circuitAdvanced>, <ore:plateAdvancedAlloy>],
-	[<ic2:blockchambers:1>, <ic2:blockchambers:1>, <ic2:blockchambers:1>],
-	[<ore:plateAdvancedAlloy>, <ic2:blockgenerator:5>, <ore:plateAdvancedAlloy>]
-]);
+val gasTurbine = <techreborn:gas_turbine>;
 
 // Modify | Steam Turbine
-
-recipes.addShapeless("basic_steam_turbine", <ic2:blockgenerator:7>, [
-	<techreborn:gas_turbine>, 
-	<techreborn:water_mill>
-]);
-
-// Modify | Reactor Chamber
-
-val denseCopperPlate = <ic2:itemmisc:259>;
-
-recipes.addShaped("reactor_chamber", <ic2:blockchambers:0>, [
-	[null, denseCopperPlate, null],
-	[denseCopperPlate, <ore:machineBlockBasic>, denseCopperPlate],
-	[null, denseCopperPlate, null]
-]);
-
-// Modify | Steam Reactor Chamber
-
-recipes.addShaped("steam_reactor_chamber", <ic2:blockchambers:1>, [
-	[<ore:plateAdvancedAlloy>, <ore:glassReinforced>, <ore:plateAdvancedAlloy>],
-	[<ore:glassReinforced>,    <ic2:blockchambers:0>, <ore:glassReinforced>],
-	[<ore:plateAdvancedAlloy>, <ore:glassReinforced>, <ore:plateAdvancedAlloy>]
+recipes.addShaped("basic_steam_turbine", <ic2:blockgenerator:7>, [
+	[null, <ore:circuitBasic>, null],
+	[<ic2:itemmisc:304>, gasTurbine, <ic2:blockgenerator:2>],
+	[null, <ic2:itemcable:4>, null]
 ]);
 
 // Modify | Solar Turbine
 
 recipes.addShaped("solar_turbine", <ic2:blockgenerator:9>, [
-	[<ore:plateIron>, <techreborn:solar_panel:0>, <ore:plateIron>],
+	[<ore:plateAdvancedAlloy>, <ic2:blockgenerator:3>, <ore:plateAdvancedAlloy>],
 	[<buildcraftfactory:tank>, <minecraft:water_bucket>, <buildcraftfactory:tank>],
-	[<ore:plateIron>, <techreborn:gas_turbine>, <ore:plateIron>]
+	[<ore:plateAdvancedAlloy>, gasTurbine, <ore:plateAdvancedAlloy>]
 ]);
 
-// Remove | Liquid Fuel Generator, Slag Generator
-
-// Modify | Wave Generator
-
-recipes.addShaped("wave_generator", <ic2:blockgenerator:12>, [
-	[<ore:ingotRefinedIron>, <ore:plateAdvancedAlloy>, <ore:circuitBasic>],
-	[<ore:ingotRefinedIron>, <techreborn:water_mill>, <techreborn:water_mill>],
-	[<ore:ingotRefinedIron>, <ore:plateAdvancedAlloy>, <ore:circuitBasic>]
-]);
 
 // Modify | Ocean Generator
 
 recipes.addShaped("ocean_generator", <ic2:blockgenerator:13>, [
 	[<ore:ingotRefinedIron>, <ore:plateAdvancedAlloy>, <ore:ingotRefinedIron>],
-	[<ic2:blockgenerator:12>, <techreborn:water_mill>, <ic2:blockgenerator:12>],
+	[<ic2:blockgenerator:12>, <ic2:blockgenerator:2>, <ic2:blockgenerator:12>],
 	[<ore:ingotRefinedIron>, <ore:plateAdvancedAlloy>, <ore:ingotRefinedIron>]
 ]);
 
@@ -186,131 +51,6 @@ recipes.addShaped("fuel_boiler", <ic2:blockgenerator:14>, [
 	[<ore:circuitAdvanced>, <techreborn:diesel_generator>, <ore:circuitAdvanced>]
 ]);
 
-// Remove | LV Solar Panel
-// Remove | MV Solar Panel
-// Remove | HV Solar Panel
-// Remove | LV Water Mill
-// Remove | MV Water Mill
-// Remove | HV Water Mill
-// Remove | Small Electric Flux Generator
-// Remove | Medium Electric Flux Generator
-// Remove | Big Electric Flux Generator
-// Remove | Machine Block
-// Remove | 2x Iron Furnace
-// Remove | Electric Furnace
-// Remove | 2x Macerator
-// Remove | Extractor
-// Remove | Compressor
-// Modify | Canning Machine
-
-recipes.addShaped("canning_machine", <ic2:blockmachinelv:6>, [
-	[<ore:ingotTin>, <ore:circuitBasic>, <ore:ingotTin>],
-	[<ore:ingotTin>, <ore:machineBlockBasic>, <ore:ingotTin>],
-	[<ore:ingotTin>, <ore:ingotTin>, <ore:ingotTin>]
-]);
-
-// Remove | Recycler
-// Remove | Electrolyzer
-// Modify | Crop Scanner
-
-val cropnalyzer = <ic2:itemcropanalyzer>;
-recipes.addShaped("crop_scanner", <ic2:blockmachinelv:9>, [
-	[null, null, null],
-	[null, cropnalyzer, null],
-	[<ore:circuitBasic>, <ore:machineBlockBasic>, <ore:circuitBasic>]
-]);
-
-// Modify | Magnetizer
-
-recipes.addShaped("magnetizer", <ic2:blockmachinelv:10>, [
-	[<minecraft:redstone>, <ore:fenceIron>, <minecraft:redstone>],
-	[<minecraft:redstone>, <ore:machineBlockBasic>, <minecraft:redstone>],
-	[<minecraft:redstone>, <ore:fenceIron>, <minecraft:redstone>]
-]);
-
-// Modify | Pump
-
-recipes.addShaped("ic2pump", <ic2:blockmachinelv:11>, [
-	[<techreborn:dynamiccell>, <ore:circuitBasic>, <techreborn:dynamiccell>],
-	[<techreborn:dynamiccell>, <ore:machineBlockBasic>, <techreborn:dynamiccell>],
-	[<ic2:blockminingpipe>, <techreborn:treetap>, <ic2:blockminingpipe>]
-]);
-
-// Modify | Miner
-
-recipes.addShaped("ic2miner", <ic2:blockmachinelv:12>, [
-	[<ore:circuitBasic>, <ore:machineBlockBasic>, <ore:circuitBasic>],
-	[null, <ic2:blockminingpipe>, null],
-	[null, <ic2:blockminingpipe>, null]
-]);
-
-// Modify | Crop-Matron
-
-recipes.addShaped("crop_matron", <ic2:blockmachinelv:13>, [
-	[<ore:circuitBasic>, <minecraft:chest>, <ore:circuitBasic>],
-	[<ic2:itemcrop>, <ore:machineBlockBasic>, <ic2:itemcrop>],
-	[<ic2:itemcrop>, <ic2:itemcrop>, <ic2:itemcrop>]
-]);
-
-// Modify | Sound Beacon
-
-var frequencyTransmitter = <ic2:itemfreq>;
-recipes.addShaped("sound_beacon", <ic2:blockmachinelv:14>, [
-	[frequencyTransmitter, <ore:ingotCopper>, frequencyTransmitter],
-	[<ore:ingotCopper>, <ore:machineBlockBasic>, <ore:ingotCopper>],
-	[<ore:reBattery>, <ore:ingotCopper>, <ore:reBattery>]
-]);
-
-// Remove | Stone Macerator
-// Remove | Wood Gasificator
-// Modify | 2x Electric Wood Gasificator
-
-recipes.addShaped("electric_wood_gasificator", <ic2:blockmachinelv2:1>, [
-	[<ore:plateAdvancedAlloy>, <techreborn:dynamiccell>, <ore:plateAdvancedAlloy>],
-	[<ore:plateCarbon>, <techreborn:extractor>, <ore:plateCarbon>],
-	[<ore:plateAdvancedAlloy>, <techreborn:electric_furnace>, <ore:plateAdvancedAlloy>]
-]);
-
-// Remove | Rare Earth Extractor
-// Modify | Crop Library
-
-recipes.addShaped("crop_library", <ic2:blockmachinelv2:3>, [
-	[<ic2:itemcrop>, <ore:reBattery>, <ic2:itemcrop>],
-	[<techreborn:lamp_led>, cropnalyzer, <ic2:itemobscurator>],
-	[<ore:circuitBasic>, <ore:machineBlockBasic>, <ore:circuitBasic>]
-]);
-
-// Remove | Machine Buffer
-// Remove | Machine Tank
-// Remove | Industrial Worktable
-// Remove | Saw Mill
-// Remove | Advanced Machine Block
-// Modify | Induction Furnace
-
-recipes.addShaped("ic2_induction_furnace", <ic2:blockmachinemv:1>, [
-	[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
-	[<ore:ingotCopper>, <techreborn:electric_furnace>, <ore:ingotCopper>],
-	[<ore:ingotCopper>, <ore:machineBlockAdvanced>, <ore:ingotCopper>]
-]);
-
-// Remove | 2x Rotary Macerator
-// Remove | Centrifugal Extractor
-// Remove | Singularity Compressor
-// Remove | Vacuum Canner
-// Remove | Compacting Recycler
-// Remove | Charged Electrolyzer
-// Modify | Ore Probe
-
-val coolantCell10k = <ic2:itemheatstorage:0>;
-val computerMonitor = <techreborn:part:24>;
-val miner = <ic2:blockmachinelv:12>;
-
-recipes.addShaped("ore_probe", <ic2:blockmachinemv:8>, [
-	[coolantCell10k, <ore:circuitAdvanced>, coolantCell10k],
-	[computerMonitor, <ore:machineBlockAdvanced>, computerMonitor],
-	[null, miner, null]
-]);
-
 // Modify | Tesla Coil
 
 recipes.addShaped("tesla_coil", <ic2:blockmachinemv:9>, [
@@ -320,6 +60,7 @@ recipes.addShaped("tesla_coil", <ic2:blockmachinemv:9>, [
 ]);
 
 // Modify | Reactor Planner
+val computerMonitor = <techreborn:part:24>;
 
 val nuclearReactor = <ic2:blockgenerator:5>;
 
@@ -330,32 +71,13 @@ recipes.addShaped("reactor_planner", <ic2:blockmachinemv:10>, [
 ]);
 
 // Modify | Crop Harvester
-
+// TODO: make this stacked in customCraftingRecipes.json.
 val cropMatron = <ic2:blockmachinelv:13>;
 
 recipes.addShaped("crop_harvester", <ic2:blockmachinemv:11>, [
-	[<minecraft:hopper>, cropnalyzer, <minecraft:hopper>],
+	[<minecraft:hopper>, <ic2:itemcropanalyzer>, <minecraft:hopper>],
 	[<minecraft:hopper>, cropMatron, <minecraft:hopper>],
 	[<ore:circuitAdvanced>, <ore:machineBlockAdvanced>, <ore:circuitAdvanced>]
-]);
-
-// Modify | Overclocked Pump
-
-val ic2Pump = <ic2:blockmachinelv:11>;
-val overclockerUpgrade = <ic2:ic2upgrades:0>;
-recipes.addShaped("overclocked_pump", <ic2:blockmachinemv:12>, [
-	[coolantCell10k, overclockerUpgrade, coolantCell10k],
-	[overclockerUpgrade, ic2Pump, overclockerUpgrade],
-	[coolantCell10k, <ore:machineBlockAdvanced>, coolantCell10k]
-]);
-
-// Modify | Ranged Pump
-
-val ic2OverclockedPump = <ic2:blockmachinemv:12>;
-recipes.addShaped("ranged_pump", <ic2:blockmachinemv:13>, [
-	[<ore:plateAdvancedAlloy>, ic2OverclockedPump, <ore:plateAdvancedAlloy>],
-	[<ore:circuitAdvanced>, miner, <ore:circuitAdvanced>],
-	[<ore:plateAdvancedAlloy>, ic2OverclockedPump, <ore:plateAdvancedAlloy>]
 ]);
 
 // Modify | Terraformer
@@ -367,57 +89,26 @@ recipes.addShaped("terraformer", <ic2:blockmachinehv:0>, [
 	[<minecraft:glowstone_dust>, <minecraft:dirt>, <minecraft:glowstone_dust>]
 ]);
 
-// Remove | Mass Fabricator
 // Modify | Teleporter
 
 val glassCable = <ic2:itemcable:9>;
 recipes.addShaped("teleporter", <ic2:blockmachinehv:2>, [
-	[<ore:circuitAdvanced>, frequencyTransmitter, <ore:circuitAdvanced>],
+	[<ore:circuitAdvanced>, <ic2:itemfreq>, <ore:circuitAdvanced>],
 	[glassCable, <ore:machineBlockAdvanced>, glassCable],
 	[<ore:circuitAdvanced>, <ore:craftingIndustrialDiamond>, <ore:circuitAdvanced>]
 ]);
-
-// Remove | Uranium Enricher
-// Remove | Electric Enchanter
-// Remove | Plasmafier
 // Modify | Teleporter Hub
 
 val teleporter = <ic2:blockmachinehv:2>;
 recipes.addShaped("teleporter_hub", <ic2:blockmachinehv:6>, [
-	[teleporter, <techreborn:lapotronicorb>, teleporter],
-	[<techreborn:lapotronicorb>, <techreborn:part:1>, <techreborn:lapotronicorb>],
-	[teleporter, <techreborn:lapotronicorb>, teleporter]
+	[teleporter, <gtclassic:battery_lapotron_small>, teleporter],
+	[<gtclassic:battery_lapotron_small>, <gtclassic:machine_basicenergystorage_ev>, <gtclassic:battery_lapotron_small>],
+	[teleporter, <gtclassic:battery_lapotron_small>, teleporter]
 ]);
 
-// Remove | BatBox
-// Remove | 2x MFE
-// Remove | MFSU
-// Remove | Battery Station
-// Remove | PESU
-// Remove | LV-Transformer
-// Remove | 2x MV-Transformer
-// Remove | HV-Transformer
-// Modify | EV-Transformer
+val ic2Pump = <ic2:blockmachinelv:11>;
+val denseCopperPlate = <ic2:itemmisc:259>;
 
-recipes.addShaped("ev_transformer", <ic2:blockelectric:11>, [
-	[null, <ore:ingotSilver>, null],
-	[<ore:circuitAdvanced>, <techreborn:hv_transformer>, <ore:lapotronCrystal>],
-	[null, <ore:ingotSilver>, null]
-]);
-
-// Remove | IV-Transformer
-// Modify | Adjustable-Transformer
-
-recipes.addShaped("adjustable_transformer", <ic2:blockelectric:12>, [
-	[null, <techreborn:lv_transformer>, null],
-	[null, <ore:circuitAdvanced>, null],
-	[null, <ic2:blockelectric:11>, null]
-]);
-
-// Remove | Static Charge Pad
-// Remove | Crystalizor Charge Pad
-// Remove | Lapotronic Charge Pad
-// Remove | Fission Charge Pad
 // Modify | Trade-O-Mat
 
 recipes.addShaped("trade-o-mat", <ic2:blockpersonal:0>, [

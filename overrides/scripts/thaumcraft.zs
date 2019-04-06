@@ -20,7 +20,7 @@ mods.jei.JEI.removeAndHide(<thaumcraft:metal_brass>);
 val mercuryTube = <gtclassic:test_tube>.withTag({Fluid: {FluidName: "mercury", Amount: 1000}});
 mods.techreborn.centrifuge.addRecipe(<thaumcraft:quicksilver>, <gtclassic:test_tube>, null, null, mercuryTube, null, 40, 5);
 
-recipes.addShapeless("quicksilver_to_cells", mercuryCell, [<thaumcraft:quicksilver>, <gtclassic:test_tube>]);
+recipes.addShapeless("quicksilver_to_cells", mercuryTube, [<thaumcraft:quicksilver>, <gtclassic:test_tube>]);
 
 mods.thermalexpansion.Transposer.addExtractRecipe(<fluid:mercury>*1000, <thaumcraft:quicksilver>, 1600);
 

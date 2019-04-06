@@ -232,7 +232,17 @@
   "Coal Dust_3": true,
   "Small Chrome Dust": true,
   "Chrome Dust_1": true,
-  "Chrome Dust_2": true
+  "Chrome Dust_2": true,
+  "ic2exprecipe_Cracked Reinforced Stone_": true,
+  "ic2exprecipe_Iron Dust_": true,
+  "ic2exprecipe_Gold Dust_": true,
+  "ic2exprecipe_Copper Dust_": true,
+  "ic2exprecipe_Tin Dust_": true,
+  "ic2exprecipe_Silver Dust_": true,
+  "ic2exprecipe_Lead Dust_": true,
+  "ic2exprecipe_Cinnabar Dust_": true,
+  "ic2exprecipe_Nether Quartz_": true,
+  "ic2exprecipe_Rotten Flesh_": true
  },
  "extractor": {
   "Coal": true,
@@ -434,11 +444,12 @@
   "Graphite Ingot_1": true,
   "Industrial Diamond_1": true,
   "pipeSealant": true,
-  "§r§bHigh Quality Hemp Oil": true,
+  "ï¿½rï¿½bHigh Quality Hemp Oil": true,
   "Block of Chrome": true,
   "Red Mud Dust": true,
   "Alumina Dust": true,
-  "Stone Dust": true
+  "Stone Dust": true,
+  "Â§rÂ§bHigh Quality Hemp Oil": true
  },
  "massfabricatorAmplifier": {
   "ScrapAmplifier": true,
