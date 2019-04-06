@@ -1735,5 +1735,18 @@
  "shapeless_Plastic Casing x 4": true,
  "shapeless_Plastic Casing x 16": true,
  "shapeless_Stainless Steel Dust_1": true,
- "shapeless_Stainless Steel Dust_2": true
+ "shapeless_Stainless Steel Dust_2": true,
+ "shapeless_Small Vibranium Dust": true,
+ "shapeless_Vibranium Dust": true,
+ "shapeless_Vibranium": true,
+ "shaped_Block of Vibranium": true,
+ "shapeless_Small Molybdenum Dust": true,
+ "shapeless_Molybdenum Dust": true,
+ "shapeless_Small Pyrolusite Dust": true,
+ "shapeless_Pyrolusite Dust": true,
+ "shapeless_Small Salt Dust": true,
+ "shapeless_Salt Dust": true,
+ "shapeless_Small Molybdenite Dust": true,
+ "shapeless_Molybdenite Dust": true,
+ "shaped_Flint Sword_1": true
 }

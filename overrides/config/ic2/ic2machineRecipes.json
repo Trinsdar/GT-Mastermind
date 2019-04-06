@@ -242,7 +242,14 @@
   "ic2exprecipe_Lead Dust_": true,
   "ic2exprecipe_Cinnabar Dust_": true,
   "ic2exprecipe_Nether Quartz_": true,
-  "ic2exprecipe_Rotten Flesh_": true
+  "ic2exprecipe_Rotten Flesh_": true,
+  "Vibranium Dust": true,
+  "Vibranium Dust_1": true,
+  "Basalt Dust": true,
+  "Pyrolusite Dust": true,
+  "Salt Dust": true,
+  "Molybdenite Dust": true,
+  "Vibranium Dust_2": true
  },
  "extractor": {
   "Coal": true,
@@ -449,7 +456,14 @@
   "Red Mud Dust": true,
   "Alumina Dust": true,
   "Stone Dust": true,
-  "§r§bHigh Quality Hemp Oil": true
+  "§r§bHigh Quality Hemp Oil": true,
+  "Vibranium Dust": true,
+  "Vibranium": true,
+  "Block of Vibranium": true,
+  "Molybdenum Dust": true,
+  "Pyrolusite Dust": true,
+  "Salt Dust": true,
+  "Molybdenite Dust": true
  },
  "massfabricatorAmplifier": {
   "ScrapAmplifier": true,
@@ -958,7 +972,8 @@
   "Small Copper Dust": true,
   "Small Copper Dust_1": true,
   "Small Tin Dust": true,
-  "Small Ash": true
+  "Small Ash": true,
+  "Small Manganese Dust": true
  },
  "centrifuge": {
   "Clay Dust": true,
