@@ -249,7 +249,15 @@
   "Pyrolusite Dust": true,
   "Salt Dust": true,
   "Molybdenite Dust": true,
-  "Vibranium Dust_2": true
+  "Vibranium Dust_2": true,
+  "ic2exprecipe_Crushed Obsidian_": true,
+  "ic2exprecipe_Obsidian Dust_": true,
+  "Void Powder": true,
+  "ic2exprecipe_Copper Dust__1": true,
+  "ic2exprecipe_Tin Dust__1": true,
+  "ic2exprecipe_Iron Dust__1": true,
+  "ic2exprecipe_Gold Dust__1": true,
+  "ic2exprecipe_Silver Dust__1": true
  },
  "extractor": {
   "Coal": true,
