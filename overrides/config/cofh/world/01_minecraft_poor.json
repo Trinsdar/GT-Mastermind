@@ -1,0 +1,65 @@
+{
+	"dependencies": "railcraft",
+	"populate": {
+		"iron": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "railcraft:ore_metal_poor",
+						"meta": 0,
+						"weight": 95
+					},
+					{
+						"name": "iron_ore",
+						"weight": 5
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 8
+			},
+			"cluster-count": 20,
+			"min-height": 0,
+			"max-height": 64,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"gold": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "railcraft:ore_metal_poor",
+						"meta": 1,
+						"weight": 95
+					},
+					{
+						"name": "gold_ore",
+						"weight": 5
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 8
+			},
+			"cluster-count": 2,
+			"min-height": 0,
+			"max-height": 32,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}
