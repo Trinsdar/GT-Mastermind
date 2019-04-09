@@ -7,7 +7,7 @@
 				"block": [
 					{
 						"name": "railcraft:ore_metal_poor",
-						"meta": 0,
+						"metadata": 0,
 						"weight": 95
 					},
 					{
@@ -37,7 +37,7 @@
 				"block": [
 					{
 						"name": "railcraft:ore_metal_poor",
-						"meta": 1,
+						"metadata": 1,
 						"weight": 95
 					},
 					{

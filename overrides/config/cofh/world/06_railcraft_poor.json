@@ -7,12 +7,12 @@
 				"block": [
 					{
 						"name": "railcraft:ore_metal_poor",
-						"meta": 2,
+						"metadata": 2,
 						"weight": 95
 					},
 					{
 						"name": "railcraft:ore_metal",
-						"meta" :0,
+						"metadata" :0,
 						"weight": 5
 					}
 				],
@@ -38,12 +38,12 @@
 				"block": [
 					{
 						"name": "railcraft:ore_metal_poor",
-						"meta": 3,
+						"metadata": 3,
 						"weight": 95
 					},
 					{
 						"name": "railcraft:ore_metal",
-						"meta" :1,
+						"metadata" :1,
 						"weight": 5
 					}
 				],
@@ -69,12 +69,12 @@
 				"block": [
 					{
 						"name": "railcraft:ore_metal_poor",
-						"meta": 5,
+						"metadata": 5,
 						"weight": 85
 					},
 					{
 						"name": "railcraft:ore_metal",
-						"meta" :3,
+						"metadata" :3,
 						"weight": 5
 					},
 					{
@@ -104,12 +104,12 @@
 				"block": [
 					{
 						"name": "railcraft:ore_metal_poor",
-						"meta": 4,
+						"metadata": 4,
 						"weight": 85
 					},
 					{
 						"name": "railcraft:ore_metal",
-						"meta" :2,
+						"metadata" :2,
 						"weight": 5
 					},
 					{
@@ -139,12 +139,12 @@
 				"block": [
 					{
 						"name": "railcraft:ore_metal_poor",
-						"meta": 6,
+						"metadata": 6,
 						"weight": 95
 					},
 					{
 						"name": "railcraft:ore_metal",
-						"meta" :4,
+						"metadata" :4,
 						"weight": 5
 					}
 				],
@@ -170,7 +170,7 @@
 				"block": [
 					{
 						"name": "railcraft:ore_metal_poor",
-						"meta": 2,
+						"metadata": 2,
 						"weight": 95
 					},
 					{
@@ -208,7 +208,7 @@
 				"block": [
 					{
 						"name": "railcraft:ore_metal_poor",
-						"meta": 2,
+						"metadata": 2,
 						"weight": 95
 					},
 					{
