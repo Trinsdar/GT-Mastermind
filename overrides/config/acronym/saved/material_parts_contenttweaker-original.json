@@ -1,3 +1,20 @@
 {
-  "materialMappings": {}
+  "materialMappings": {
+    "lumium_rod": 11,
+    "mithril_dust": 0,
+    "mithril_rod": 3,
+    "mithril_gear": 1,
+    "signalum_dust": 4,
+    "enderium_plate": 14,
+    "lumium_plate": 10,
+    "signalum_plate": 6,
+    "mithril_plate": 2,
+    "enderium_rod": 15,
+    "signalum_gear": 5,
+    "enderium_dust": 12,
+    "enderium_gear": 13,
+    "lumium_dust": 8,
+    "signalum_rod": 7,
+    "lumium_gear": 9
+  }
 }
