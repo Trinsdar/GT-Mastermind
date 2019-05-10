@@ -9,6 +9,14 @@ recipes.addShaped("nuke_hardmode", <ic2:blockexplosive:1>, [
 	[uranium_block, <ore:machineBlockAdvanced>, uranium_block],
 	[reenriched_uranium, <ore:circuitAdvanced>, reenriched_uranium]
 ]);
+// Modify | Machine Block
+val refinedIronPlate = <ore:plateRefinedIron>;
+recipes.addShaped("machine_block", <ic2:blockmachinelv>, [
+	[refinedIronPlate, refinedIronPlate, refinedIronPlate],
+	[refinedIronPlate, <ore:craftingToolWrench>, refinedIronPlate],
+	[refinedIronPlate, refinedIronPlate, refinedIronPlate]
+]);
+
 // Modify | EU-Detector Cable
 
 recipes.addShaped("eu_detector_cable", <ic2:itemcable:11>, [
@@ -30,7 +38,7 @@ recipes.addShaped("basic_steam_turbine", <ic2:blockgenerator:7>, [
 
 recipes.addShaped("solar_turbine", <ic2:blockgenerator:9>, [
 	[<ore:plateAdvancedAlloy>, <ic2:blockgenerator:3>, <ore:plateAdvancedAlloy>],
-	[<buildcraftfactory:tank>, <minecraft:water_bucket>, <buildcraftfactory:tank>],
+	[<ic2:blockmachinelv>, <ic2:itemmisc:304>, <ic2:blockmachinelv:11>],
 	[<ore:plateAdvancedAlloy>, gasTurbine, <ore:plateAdvancedAlloy>]
 ]);
 
@@ -47,17 +55,10 @@ recipes.addShaped("ocean_generator", <ic2:blockgenerator:13>, [
 
 recipes.addShaped("fuel_boiler", <ic2:blockgenerator:14>, [
 	[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
-	[<ore:plateSteel>, null, <ore:plateSteel>],
+	[<ic2:itemreactorplating:1>, null, <ic2:itemreactorplating:1>],
 	[<ore:circuitAdvanced>, <techreborn:diesel_generator>, <ore:circuitAdvanced>]
 ]);
 
-// Modify | Tesla Coil
-
-recipes.addShaped("tesla_coil", <ic2:blockmachinemv:9>, [
-	[<minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>],
-	[<minecraft:redstone>, <techreborn:mv_transformer>, <minecraft:redstone>],
-	[<ore:ingotRefinedIron>, <ore:circuitBasic>, <ore:ingotRefinedIron>]
-]);
 
 // Modify | Reactor Planner
 val computerMonitor = <techreborn:part:24>;
@@ -80,23 +81,7 @@ recipes.addShaped("crop_harvester", <ic2:blockmachinemv:11>, [
 	[<ore:circuitAdvanced>, <ore:machineBlockAdvanced>, <ore:circuitAdvanced>]
 ]);
 
-// Modify | Terraformer
 
-val tfbpEmpty = <ic2:itemmisc:401>;
-recipes.addShaped("terraformer", <ic2:blockmachinehv:0>, [
-	[<minecraft:glowstone_dust>, tfbpEmpty, <minecraft:glowstone_dust>],
-	[<minecraft:dirt>, <ore:machineBlockAdvanced>, <minecraft:dirt>],
-	[<minecraft:glowstone_dust>, <minecraft:dirt>, <minecraft:glowstone_dust>]
-]);
-
-// Modify | Teleporter
-
-val glassCable = <ic2:itemcable:9>;
-recipes.addShaped("teleporter", <ic2:blockmachinehv:2>, [
-	[<ore:circuitAdvanced>, <ic2:itemfreq>, <ore:circuitAdvanced>],
-	[glassCable, <ore:machineBlockAdvanced>, glassCable],
-	[<ore:circuitAdvanced>, <ore:craftingIndustrialDiamond>, <ore:circuitAdvanced>]
-]);
 // Modify | Teleporter Hub
 
 val teleporter = <ic2:blockmachinehv:2>;
@@ -109,38 +94,6 @@ recipes.addShaped("teleporter_hub", <ic2:blockmachinehv:6>, [
 val ic2Pump = <ic2:blockmachinelv:11>;
 val denseCopperPlate = <ic2:itemmisc:259>;
 
-// Modify | Trade-O-Mat
-
-recipes.addShaped("trade-o-mat", <ic2:blockpersonal:0>, [
-	[null, null, null],
-	[<minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>],
-	[<minecraft:chest>, <ore:machineBlockBasic>, <minecraft:chest>]
-]);
-
-// Modify | Fluid-O-Mat
-
-recipes.addShaped("fluid-o-mat", <ic2:blockpersonal:1>, [
-	[null, null, null],
-	[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-	[ic2Pump, <ore:machineBlockBasic>, ic2Pump]
-]);
-
-// Modify | Energy-O-Mat
-
-val copperCable = <ic2:itemcable:1>;
-recipes.addShaped("energy-o-mat", <ic2:blockpersonal:2>, [
-	[null, null, null],
-	[<minecraft:redstone>, <ore:reBattery>, <minecraft:redstone>],
-	[copperCable, <ore:machineBlockBasic>, copperCable]
-]);
-
-// Modify | Personal Safe
-
-recipes.addShaped("personal_safe", <ic2:blockpersonal:3>, [
-	[null, <ore:circuitBasic>, null],
-	[null, <ore:machineBlockBasic>, null],
-	[null, <minecraft:chest>, null]
-]);
 
 // Keep   | Personal Tank
 // Remove | Personal Batbox
@@ -160,48 +113,22 @@ recipes.addShaped("personal_safe", <ic2:blockpersonal:3>, [
 // Remove | Turbine Blade
 // Keep   | 10x Industrial Credit
 // Keep   | 2x Rubber Boat
-// Modify | Carbon Boat
+// Modify | Water Mill
 
-recipes.addShaped("carbon_boat", <ic2:itemic2boats:0>, [
-	[null, null, null],
-	[<ore:plateCarbon>, <minecraft:boat>, <ore:plateCarbon>],
-	[<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>]
-]);
-
-// Modify | Electic Boat
-
-recipes.addShaped("electric_boat", <ic2:itemic2boats:3>, [
-	[null, null, null],
-	[<ore:ingotRefinedIron>, <ic2:itemic2boats:0>, <ore:circuitBasic>],
-	[<ore:ingotRefinedIron>, <ore:ingotRefinedIron>, <techreborn:water_mill>]
-]);
-
-// Remove | Scrap Box
-// Modify | Sticky Dynamite
-
-recipes.addShaped("sticky_dynamite", <ic2:itemdynamites:1>*8, [
+recipes.addShaped("water_mill", <ic2:blockgenerator:2>*2, [
 	[<ic2:itemdynamites:0>, <ic2:itemdynamites:0>, <ic2:itemdynamites:0>],
-	[<ic2:itemdynamites:0>, <techreborn:part:31>, <ic2:itemdynamites:0>],
+	[<ic2:itemdynamites:0>, <ic2:blockgenerator>, <ic2:itemdynamites:0>],
 	[<ic2:itemdynamites:0>, <ic2:itemdynamites:0>, <ic2:itemdynamites:0>]
 ]);
 
-// Keep   | Dynamite
-// Remove | Rare Earth Chunk
-// Remove | Plasma Core
-// Remove | Memory Stick
-// Keep   | Glowstone Dust
-// Remove | Gunpowder [from Coal + Redstone]
-// Remove | Bucket [from Tin]
 // Modify | Organic Mesh
 
 recipes.addShaped("organic_mesh", <ic2:itemmisc:353>, [
 	[<ic2:itemmisc:351>, <ic2:itemmisc:351>, <ic2:itemmisc:351>],
-	[<ic2:itemmisc:351>, <techreborn:part:31>, <ic2:itemmisc:351>],
+	[<ic2:itemmisc:351>, <ic2:itemharz>, <ic2:itemmisc:351>],
 	[<ic2:itemmisc:351>, <ic2:itemmisc:351>, <ic2:itemmisc:351>]
 ]);
 
-// Keep   | Bio Ball
-// Remove | Bio Chunk
 // Compat | Empty Cell
 
 recipes.addShapeless("empty_cell_tr_to_ic2", <ic2:itemcellempty>, [
@@ -212,20 +139,6 @@ recipes.addShapeless("empty_cell_tr_to_ic2", <ic2:itemcellempty>, [
 // Keep   | 17x Plantball
 // TODO: H Coal Dust, H Charcoal Dust, H Coal Cell
 // TODO: Bio Cell
-// Keep   | Tin Can
-// Modify | 2x Inactive Fuel Cell
-
-recipes.addShapeless("inactive_fuel_cell", <ic2:iteminactivefuelcell>, [
-	<ore:dustClay>,
-	<ore:dustNetherrack>,
-	<ore:dustNetherrack>,
-	<ore:dustNetherrack>,
-	<ore:dustNetherrack>,
-	<ore:dustNetherrack>,
-	<ore:dustNetherrack>,
-	<ore:dustNetherrack>,
-	<ore:dustNetherrack>
-]);
 
 // Remove | Obsidian [From Cells]
 // Modify | Obsidian [From Magma]
