@@ -84,6 +84,7 @@ recipes.addShaped("crop_harvester", <ic2:blockmachinemv:11>, [
 
 // Modify | Teleporter Hub
 
+val glassCable = <ic2:itemcable:9>;
 val teleporter = <ic2:blockmachinehv:2>;
 recipes.addShaped("teleporter_hub", <ic2:blockmachinehv:6>, [
 	[teleporter, <gtclassic:battery_lapotron_small>, teleporter],
@@ -135,107 +136,75 @@ recipes.addShapeless("empty_cell_tr_to_ic2", <ic2:itemcellempty>, [
 	<techreborn:dynamiccell>
 ]);
 
-// Keep   | Fuel Can
-// Keep   | 17x Plantball
-// TODO: H Coal Dust, H Charcoal Dust, H Coal Cell
-// TODO: Bio Cell
-
-// Remove | Obsidian [From Cells]
-// Modify | Obsidian [From Magma]
-
 var waterCell = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "water", Amount:1000}});
-recipes.addShapeless("obsidian_from_magma", <minecraft:obsidian>, [
-	waterCell,
-	waterCell,
-	<minecraft:magma>,
-	<minecraft:magma>
+
+// Modify | Mining Drill
+
+recipes.addShaped("mining_drill", <ic2:itemdrills>, [
+	[null, <ore:plateSteel>, null],
+	[<ore:plateSteel>, <ore:circuitBasic>, <ore:plateSteel>],
+	[<ore:plateSteel>, <ore:reBattery>, <ore:plateSteel>]
 ]);
 
-// Remove | Water Cell
-// Remove | Lava Cell
-// Keep   | Crop Sticks
-// Modify | 2x Fertilizer
+// Modify | Chainsaw
 
-recipes.addShapeless("fertilizer_from_bonemeal", <ic2:itemmisc:151>*2, [
-	<ore:itemScrap>,
-	<minecraft:dye:15>
+recipes.addShaped("chainsaw", <ic2:itemtoolchainsaw>, [
+	[null, <ore:plateSteel>, <ore:plateSteel>],
+	[<ore:plateSteel>, <ore:circuitBasic>, <ore:plateSteel>],
+	[<ore:reBattery>, <ore:plateSteel>, null]
 ]);
 
-recipes.addShapeless("fertilizer_from_scrap", <ic2:itemmisc:151>*2, [
-	<ore:itemScrap>,
-	<ore:itemScrap>,
-	<ic2:itemmisc:151>
-]);
-
-// Modify | Weed-EX
-
-recipes.addShaped("weed-ex", <ic2:itemweedex>, [
-	[null, <minecraft:redstone>, null],
-	[null, <ic2:itemmisc:150>, null],
-	[null, <techreborn:dynamiccell>, null]
-]);
-
-// Keep   | Stone Mug
-// Keep   | Coffee Powder
-// Keep   | Dark Coffee
-// Keep   | Coffee
-// Modify | Overgrowth Fertilizer
-
-var ic2Fertilizer = <ic2:itemmisc:151>;
-var grinPowder = <ic2:itemmisc:150>;
-recipes.addShapeless("overgrowth_fertilizer", <ic2:itemmisc:157>*3, [
-	ic2Fertilizer,
-	waterCell,
-	<minecraft:dye:15>,
-	grinPowder,
-	<ore:itemScrap>,
-	<ore:itemScrap>
-]);
-
-// Modify | Restoring Fertilizer
-
-var ic2OvergrowthFertilizer = <ic2:itemmisc:157>;
-recipes.addShaped("restoring_fertilizer", <ic2:itemmisc:160>, [
-	[ic2OvergrowthFertilizer, ic2OvergrowthFertilizer, ic2OvergrowthFertilizer],
-	[ic2OvergrowthFertilizer, ic2OvergrowthFertilizer, ic2OvergrowthFertilizer],
-	[ic2OvergrowthFertilizer, ic2OvergrowthFertilizer, ic2OvergrowthFertilizer]
-]);
-
-// Keep   | Cold Tea
-// Keep   | Tea
-// Keep   | Iced Tea
-// Modify | Booze Barrel
-
-recipes.addShaped("booze_barrel", <ic2:itembarrel>, [
-	[null, <ore:plankWood>, null],
-	[null, <techreborn:rubber_log>, null],
-	[null, <ore:plankWood>, null]
-]);
-
-// Keep   | Booze Barrel empty recipe
-// Keep   | Stone Mug
-// Keep   | Paper
-// Keep   | String
-// Keep   | IC2 to Vanilla seeds
-// Remove | Mining Drill
-// Remove | Chainsaw
-// Remove | Diamond Drill
-// Remove | Diamond Drill upgrades
 // Modify | Electric Hoe
 
 recipes.addShaped("electric_hoe", <ic2:itemtoolhoe>, [
-	[<ore:ingotRefinedIron>, <ore:ingotRefinedIron>, null],
-	[null, <ore:circuitBasic>, null],
+	[<ore:plateRefinedIron>, <ore:plateRefinedIron>, null],
+	[<ore:craftingToolFile>, <ore:circuitBasic>, null],
 	[null, <ore:reBattery>, null]
 ]);
 
-// Remove | Electric Wrench
-// Remove | 2x Electric Treetap
-// Remove | Electric Sprayer
+// Modify | Electric Wrench
+recipes.removeByRecipeName("techreborn:itemtoolwrenchelectric");
+recipes.addShaped("electric_wrench", <ic2:itemtoolwrenchelectric>,[
+	[null, <ore:craftingToolFile>, <ic2:itemtoolwrench>],
+	[null, <ore:circuitBasic>, null],
+	[<ore:reBattery>, null, null]
+]);
+
+// Modify | Gravitool
+
+recipes.addShaped("gravitool", <gravisuit:gravitool>,[
+	[<ore:plateCarbon>, <ic2:itemtoolhoe>, <ore:plateCarbon>],
+	[<ore:plateAdvancedAlloy>, <ic2:itembatcrystal>, <ore:plateAdvancedAlloy>],
+	[<ic2:itemtoolwrenchelectric>, <ore:circuitAdvanced>, <ic2:itemtreetapelectric>]
+]);
+
+// Modify | Electric Treetap
+
+recipes.addShaped("electric_treetap", <ic2:itemtreetapelectric>,[
+	[null, <ore:craftingToolFile>, <ic2:itemtreetap>],
+	[null, <ore:circuitBasic>, null],
+	[<ore:reBattery>, null, null]
+]);
+// Modify | Electric Sprayer
+
+recipes.addShaped("electric_sprayer", <ic2:electricsprayer>,[
+	[null, <ore:craftingToolFile>, <ic2:itemfoamsprayer>],
+	[null, <ore:circuitBasic>, null],
+	[<ore:reBattery>, null, null]
+]);
+
+// Modify | Electric Sprayer
+
+recipes.addShaped("electric_chisel", <powerchisels:electric_chisel>,[
+	[null, <ore:craftingToolFile>, <ore:plateRefinedIron>],
+	[null, <ore:circuitBasic>, null],
+	[<ore:reBattery>, null, null]
+]);
+
 // Modify | Mining Laser
 
 var coolantHelium360k = <techreborn:part:9>;
-val titaniumPlate = <techreborn:plates:30>;
+val titaniumPlate = <ore:plateTitanium>;
 recipes.addShaped("mining_laser_helium", <ic2:itemtoolmininglaser>, [
 	[<techreborn:gem:0>, coolantHelium360k, <ore:energyCrystal>],
 	[titaniumPlate, titaniumPlate, <ore:circuitAdvanced>],
@@ -258,20 +227,7 @@ recipes.addShaped("obscurator", <ic2:itemobscurator>, [
 	[<minecraft:stone_button>, <ore:circuitAdvanced>, <minecraft:stone_button>]
 ]);
 
-// Modify | 2x Precision Wrench
-
-recipes.addShaped("precision_wrench_ic2", <ic2:precisionwrench>.withTag({Lossless: 1}), [
-	[null, null, <ic2:itemtoolwrench>],
-	[null, <ore:circuitBasic>, null],
-	[<ore:reBattery>, null, null]
-]);
-
-recipes.addShaped("precision_wrench_tr", <ic2:precisionwrench>.withTag({Lossless: 1}), [
-	[null, null, <techreborn:wrench>],
-	[null, <ore:circuitBasic>, null],
-	[<ore:reBattery>, null, null]
-]);
-
+// Remove | 2x Precision Wrench
 // Modify | Mowing Tool
 
 recipes.addShaped("mowing_tool", <ic2:itemmowingtool>, [
@@ -290,7 +246,7 @@ recipes.addShaped("portable_teleporter", <ic2:itemportableteleporter>, [
 ]);
 
 // Modify | OD Scanner
-
+val copperCable = <ic2:itemcable:1>;
 recipes.addShaped("scanner_od", <ic2:itemmetascanners:0>, [
 	[null, <minecraft:glowstone_dust>, null],
 	[<ore:circuitBasic>, <ore:reBattery>, <ore:circuitBasic>],
