@@ -218,22 +218,13 @@ recipes.addShaped("mining_laser_nak", <ic2:itemtoolmininglaser>, [
 	[null, <ore:plateAdvancedAlloy>, <ore:plateAdvancedAlloy>]
 ]);
 
-// Remove | Nano Saber
-// Modify | Obscurator
-
-recipes.addShaped("obscurator", <ic2:itemobscurator>, [
-	[<minecraft:painting>, <ore:blockGlass>, <minecraft:painting>],
-	[<minecraft:sticky_piston>, <ore:energyCrystal>, <minecraft:piston>],
-	[<minecraft:stone_button>, <ore:circuitAdvanced>, <minecraft:stone_button>]
-]);
-
 // Remove | 2x Precision Wrench
 // Modify | Mowing Tool
 
 recipes.addShaped("mowing_tool", <ic2:itemmowingtool>, [
-	[null, <techreborn:ironchainsaw>, null],
-	[<ore:ingotRefinedIron>, <ore:circuitBasic>, <ore:ingotRefinedIron>],
-	[<ore:ingotRefinedIron>, <ore:reBattery>, <ore:ingotRefinedIron>]
+	[<ore:craftingToolFile>, <ic2:itemmisc:304>, null],
+	[<ore:plateRefinedIron>, <ore:circuitBasic>, <ore:plateRefinedIron>],
+	[<ore:plateRefinedIron>, <ore:reBattery>, <ore:plateRefinedIron>]
 ]);
 
 // Modify | Portable Teleporter
@@ -256,213 +247,10 @@ recipes.addShaped("scanner_od", <ic2:itemmetascanners:0>, [
 // Modify | 4x OV Scanner
 
 val goldCable2x = <ic2:itemcable:4>;
-recipes.addShaped("scanner_ov_upgrade_gold", <ic2:itemmetascanners:1>, [
-	[null, <minecraft:glowstone_dust>, null],
-	[<minecraft:glowstone_dust>, <ore:circuitAdvanced>, <minecraft:glowstone_dust>],
-	[goldCable2x, <ic2:itemmetascanners:0>, goldCable2x]
-]);
 
 val bronzeCable2x = <ic2:itemcable:15>;
-recipes.addShaped("scanner_ov_upgrade_bronze", <ic2:itemmetascanners:1>, [
-	[bronzeCable2x, <minecraft:glowstone_dust>, bronzeCable2x],
-	[<minecraft:glowstone_dust>, <ore:circuitAdvanced>, <minecraft:glowstone_dust>],
-	[bronzeCable2x, <ic2:itemmetascanners:0>, bronzeCable2x]
-]);
-
-recipes.addShaped("scanner_ov_gold", <ic2:itemmetascanners:1>, [
-	[null, <minecraft:glowstone_dust>, null],
-	[<minecraft:glowstone_dust>, <ore:circuitAdvanced>, <minecraft:glowstone_dust>],
-	[goldCable2x, <ore:reBattery>, goldCable2x]
-]);
-
-recipes.addShaped("scanner_ov_bronze", <ic2:itemmetascanners:1>, [
-	[bronzeCable2x, <minecraft:glowstone_dust>, bronzeCable2x],
-	[<minecraft:glowstone_dust>, <ore:circuitAdvanced>, <minecraft:glowstone_dust>],
-	[bronzeCable2x, <ore:reBattery>, bronzeCable2x]
-]);
-
-// Modify | 2x Ranged OD Scanner
-
-recipes.addShaped("ranged_od_scanner", <ic2:itemmetascanners:2>, [
-	[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>],
-	[<ic2:itemmetascanners:0>, <ore:circuitAdvanced>, <ic2:itemmetascanners:0>],
-	[goldCable2x, goldCable2x, goldCable2x]
-]);
-
-// Modify | 2x Ranged OV Scanner
-
-recipes.addShaped("ranged_ov_scanner", <ic2:itemmetascanners:3>, [
-	[<minecraft:glowstone_dust>, <minecraft:glowstone_dust>, <minecraft:glowstone_dust>],
-	[<ic2:itemmetascanners:1>, <ore:circuitAdvanced>, <ic2:itemmetascanners:1>],
-	[goldCable2x, goldCable2x, goldCable2x]
-]);
-
-/// Modify | Ranged OD Scanner [Conversion]
-
-recipes.addShapeless("ranged_od_scanner_conversion", <ic2:itemmetascanners:2>, [
-	<ic2:itemmetascanners:3>,
-	<ore:circuitBasic>
-]);
-
-// Modify | Ranged OV Scanner [Conversion]
-
-recipes.addShapeless("ranged_ov_scanner_conversion", <ic2:itemmetascanners:3>, [
-	<ic2:itemmetascanners:2>,
-	<ore:circuitAdvanced>
-]);
-
-// Modify | Big Ranged OD Scanner
-
-recipes.addShaped("big_ranged_od_scanner", <ic2:itemmetascanners:4>, [
-	[<minecraft:glowstone_dust>, <ore:circuitAdvanced>, <minecraft:glowstone_dust>],
-	[<ic2:itemmetascanners:0>, <ic2:itemmetascanners:2>, <ic2:itemmetascanners:0>],
-	[<minecraft:glowstone_dust>, <ore:circuitAdvanced>, <minecraft:glowstone_dust>]
-]);
-
-// Modify | Big Ranged OV Scanner
-
-recipes.addShaped("big_ranged_ov_scanner", <ic2:itemmetascanners:5>, [
-	[<minecraft:glowstone_dust>, <ore:circuitAdvanced>, <minecraft:glowstone_dust>],
-	[<ic2:itemmetascanners:1>, <ic2:itemmetascanners:3>, <ic2:itemmetascanners:1>],
-	[<minecraft:glowstone_dust>, <ore:circuitAdvanced>, <minecraft:glowstone_dust>]
-]);
-
-// Modify | Big Ranged OD Scanner [Conversion]
-
-recipes.addShapeless("big_ranged_od_scanner_conversion", <ic2:itemmetascanners:4>, [
-	<ic2:itemmetascanners:5>,
-	<ore:circuitBasic>
-]);
-
-// Modify | Big Ranged OV Scanner [Conversion]
-
-recipes.addShapeless("big_ranged_ov_scanner_conversion", <ic2:itemmetascanners:5>, [
-	<ic2:itemmetascanners:4>,
-	<ore:circuitAdvanced>
-]);
-
-// Modify | Low OVD Scanner
-
-recipes.addShaped("ovd_scanner_low", <ic2:itemmetascanners:6>, [
-	[<minecraft:glowstone_dust>, <ore:circuitBasic>, <minecraft:glowstone_dust>],
-	[<ic2:itemmetascanners:1>, <ic2:itemmetascanners:0>, <ic2:itemmetascanners:1>],
-	[<minecraft:glowstone_dust>, <ore:circuitBasic>, <minecraft:glowstone_dust>]
-]);
-
-// Modify | Medium OVD Scanner
-
-recipes.addShaped("ovd_scanner_medium", <ic2:itemmetascanners:7>, [
-	[<minecraft:glowstone_dust>, <ore:circuitAdvanced>, <minecraft:glowstone_dust>],
-	[<ic2:itemmetascanners:1>, <ic2:itemmetascanners:0>, <ic2:itemmetascanners:1>],
-	[<minecraft:glowstone_dust>, <ore:circuitAdvanced>, <minecraft:glowstone_dust>]
-]);
-
-// Modify | High OVD Scanner
-
-recipes.addShaped("ovd_scanner_high", <ic2:itemmetascanners:8>, [
-	[<ore:circuitBasic>, <minecraft:glowstone_dust>, <ore:circuitBasic>],
-	[<ic2:itemmetascanners:1>, <ic2:itemmetascanners:0>, <ic2:itemmetascanners:1>],
-	[<ore:circuitBasic>, <minecraft:glowstone_dust>, <ore:circuitBasic>]
-]);
-
-// Modify | Adjustable OVD Scanner
-
-recipes.addShaped("ovd_scanner_adjustable", <ic2:itemmetascanners:9>, [
-	[<ore:circuitAdvanced>, <minecraft:glowstone_dust>, <ore:circuitAdvanced>],
-	[<ic2:itemmetascanners:1>, <ic2:itemmetascanners:0>, <ic2:itemmetascanners:1>],
-	[<ore:circuitAdvanced>, <minecraft:glowstone_dust>, <ore:circuitAdvanced>]
-]);
-
-// Modify | Quarry Scanner
-
-recipes.addShaped("quarry_scanner", <ic2:itemmetascanners:10>, [
-	[<minecraft:redstone>, <ic2:itemmetascanners:0>, <minecraft:redstone>],
-	[<ic2:itemmetascanners:0>, <minecraft:redstone>, <ic2:itemmetascanners:0>],
-	[<minecraft:redstone>, <ic2:itemmetascanners:0>, <minecraft:redstone>]
-]);
-
-// Modify | Quarry Scanner [Upgraded]
-
-recipes.addShapeless("quarry_scanner_upgrade", <ic2:itemmetascanners:10>.withTag({UpgradedRadius: 12, Upgraded: 1 as byte}), [
-	<ic2:itemmetascanners:10>,
-	<ore:circuitAdvanced>
-]);
-
-// Keep   | Fluid Scanner
-// Modify | Filtered Fluid Scanner
-
-recipes.addShaped("filtered_fluid_scanner", <ic2:itemmetascanners:12>, [
-	[null, <ic2:itemmetascanners:11>, null],
-	[null, <minecraft:chest>, null],
-	[null, <ore:circuitAdvanced>, null]
-]);
-
-// Modify | Filtered Scanner
-
-recipes.addShaped("filtered_scanner", <ic2:itemmetascanners:13>, [
-	[null, <ic2:itemmetascanners:10>, null],
-	[null, <minecraft:chest>, null],
-	[null, <ore:circuitAdvanced>, null]
-]);
-
-// Remove | Treetap
-// Keep   | Painter
-// Keep   | Wrench
-// Keep   | Insulation Cutter
-// Keep   | Tool Box
-// Modify | Nano Tool Box
-
-var ic2Toolbox = <ic2:itemtoolbox:0>;
-recipes.addShaped("nano_tool_box", <ic2:itemtoolbox:2>, [
-	[null, null, null],
-	[<ore:plateCarbon>, ic2Toolbox, <ore:plateCarbon>],
-	[<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>]
-]);
-
-// Modify | Quantum Tool Box
-
-var ic2NanoToolbox = <ic2:itemtoolbox:2>;
-recipes.addShaped("quantum_tool_box", <ic2:itemtoolbox:4>, [
-	[null, null, null],
-	[<ore:plateIridiumAlloy>, ic2NanoToolbox, <ore:plateIridiumAlloy>],
-	[<ore:plateIridiumAlloy>, <ore:plateIridiumAlloy>, <ore:plateIridiumAlloy>]
-]);
-
-// Modify | EU-Reader
-
-recipes.addShaped("eu_reader", <ic2:itemtoolmeter>, [
-	[null, <minecraft:glowstone_dust>, null],
-	[copperCable, <ore:circuitBasic>, copperCable],
-	[copperCable, null, copperCable]
-]);
-
-// Modify | Cropnalyzer
-
-recipes.addShaped("cropnalyzer", <ic2:itemcropanalyzer>, [
-	[copperCable, copperCable, null],
-	[<minecraft:redstone>, <ore:blockGlass>, <minecraft:redstone>],
-	[<minecraft:redstone>, <ore:circuitBasic>, <minecraft:redstone>]
-]);
-
-// Remove | Dyanmite-O-Mote [direct recipe]
-// Modify | Frequency Transmitter
-
-recipes.addShapeless("frequency_transmitter", <ic2:itemfreq>, [
-	<ore:circuitBasic>,
-	copperCable
-]);
-
-// Keep   | CF Sprayer
-// Keep   | CF Sprayer [Refill]
-// Keep   | Dynamite-O-Mote
-// Modify | Machine Tool
 
 val euReader = <ic2:itemtoolmeter>;
-recipes.addShaped("machine_tool", <ic2:itemmachinetool>, [
-	[<ore:circuitAdvanced>, <minecraft:comparator>, <ore:circuitAdvanced>],
-	[<ore:plateCarbon>, euReader, <ore:plateCarbon>],
-	[<ore:circuitAdvanced>, <minecraft:comparator>, <ore:circuitAdvanced>]
-]);
 
 // Modify | Thermometer
 
