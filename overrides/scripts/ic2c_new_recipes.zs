@@ -236,20 +236,10 @@ recipes.addShaped("portable_teleporter", <ic2:itemportableteleporter>, [
 	[<ore:circuitAdvanced>, teleporterHub, <ore:circuitAdvanced>]
 ]);
 
-// Modify | OD Scanner
+
 val copperCable = <ic2:itemcable:1>;
-recipes.addShaped("scanner_od", <ic2:itemmetascanners:0>, [
-	[null, <minecraft:glowstone_dust>, null],
-	[<ore:circuitBasic>, <ore:reBattery>, <ore:circuitBasic>],
-	[copperCable, copperCable, copperCable]
-]);
-
-// Modify | 4x OV Scanner
-
 val goldCable2x = <ic2:itemcable:4>;
-
 val bronzeCable2x = <ic2:itemcable:15>;
-
 val euReader = <ic2:itemtoolmeter>;
 
 // Modify | Thermometer
