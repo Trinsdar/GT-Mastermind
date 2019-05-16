@@ -5,7 +5,7 @@ import mods.primal.Smelter;
 
 
 
-static addPlates as IOreDictEntry[IItemStack] = {
+static removeAndHide as IOreDictEntry[IItemStack] = {
 	<primal:iron_dust> : <ore:dustIron>,
 	<primal:iron_plate> : <ore:plateIron>,
 	<primal:steel_ingot> : <ore:ingotSteel>,
@@ -62,7 +62,7 @@ static addPlates as IOreDictEntry[IItemStack] = {
 	<primal:tamahagane_plate> : <ore:plateTamahagane>
 };
 
-for output, input in addPlates {
+for output, input in removeAndHide {
 	mods.jei.JEI.removeAndHide(output);
 	input.remove(output);
 }
