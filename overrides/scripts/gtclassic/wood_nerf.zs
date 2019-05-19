@@ -111,66 +111,66 @@ static changePlanks as IIngredient[IItemStack] = {
 	<forestry:planks.0:1> : <forestry:logs.0:1>,
 	<forestry:planks.0:2> : <forestry:logs.0:2>,
 	<forestry:planks.0:3> : <forestry:logs.0:3>,
-	<forestry:planks.0:4> : <forestry:logs.0:4>,
-	<forestry:planks.0:5> : <forestry:logs.0:5>,
-	<forestry:planks.0:6> : <forestry:logs.0:6>,
-	<forestry:planks.0:7> : <forestry:logs.0:7>,
-	<forestry:planks.0:8> : <forestry:logs.0:8>,
-	<forestry:planks.0:9> : <forestry:logs.0:9>,
-	<forestry:planks.0:10> : <forestry:logs.0:10>,
-	<forestry:planks.0:11> : <forestry:logs.0:11>,
-	<forestry:planks.0:12> : <forestry:logs.0:12>,
-	<forestry:planks.0:13> : <forestry:logs.0:13>,
-	<forestry:planks.0:14> : <forestry:logs.0:14>,
-	<forestry:planks.0:15> : <forestry:logs.0:15>,
-	<forestry:planks.1> : <forestry:logs.1>,
-	<forestry:planks.1:1> : <forestry:logs.1:1>,
-	<forestry:planks.1:2> : <forestry:logs.1:2>,
-	<forestry:planks.1:3> : <forestry:logs.1:3>,
-	<forestry:planks.1:4> : <forestry:logs.1:4>,
-	<forestry:planks.1:5> : <forestry:logs.1:5>,
-	<forestry:planks.1:6> : <forestry:logs.1:6>,
-	<forestry:planks.1:7> : <forestry:logs.1:7>,
-	<forestry:planks.1:8> : <forestry:logs.1:8>,
-	<forestry:planks.1:9> : <forestry:logs.1:9>,
-	<forestry:planks.1:10> : <forestry:logs.1:10>,
-	<forestry:planks.1:11> : <forestry:logs.1:11>,
-	<forestry:planks.1:12> : <forestry:logs.1:12>,
+	<forestry:planks.0:4> : <forestry:logs.1:0>,
+	<forestry:planks.0:5> : <forestry:logs.1:1>,
+	<forestry:planks.0:6> : <forestry:logs.1:2>,
+	<forestry:planks.0:7> : <forestry:logs.1:3>,
+	<forestry:planks.0:8> : <forestry:logs.2:0>,
+	<forestry:planks.0:9> : <forestry:logs.2:1>,
+	<forestry:planks.0:10> : <forestry:logs.2:2>,
+	<forestry:planks.0:11> : <forestry:logs.2:3>,
+	<forestry:planks.0:12> : <forestry:logs.3:0>,
+	<forestry:planks.0:13> : <forestry:logs.3:1>,
+	<forestry:planks.0:14> : <forestry:logs.3:2>,
+	<forestry:planks.0:15> : <forestry:logs.3:3>,
+	<forestry:planks.1> : <forestry:logs.4>,
+	<forestry:planks.1:1> : <forestry:logs.4:1>,
+	<forestry:planks.1:2> : <forestry:logs.4:2>,
+	<forestry:planks.1:3> : <forestry:logs.4:3>,
+	<forestry:planks.1:4> : <forestry:logs.5:0>,
+	<forestry:planks.1:5> : <forestry:logs.5:1>,
+	<forestry:planks.1:6> : <forestry:logs.5:2>,
+	<forestry:planks.1:7> : <forestry:logs.5:3>,
+	<forestry:planks.1:8> : <forestry:logs.6:0>,
+	<forestry:planks.1:9> : <forestry:logs.6:1>,
+	<forestry:planks.1:10> : <forestry:logs.6:2>,
+	<forestry:planks.1:11> : <forestry:logs.6:3>,
+	<forestry:planks.1:12> : <forestry:logs.7:0>,
 	<forestry:planks.fireproof.0> : <forestry:logs.fireproof.0>,
 	<forestry:planks.fireproof.0:1> : <forestry:logs.fireproof.0:1>,
 	<forestry:planks.fireproof.0:2> : <forestry:logs.fireproof.0:2>,
 	<forestry:planks.fireproof.0:3> : <forestry:logs.fireproof.0:3>,
-	<forestry:planks.fireproof.0:4> : <forestry:logs.fireproof.0:4>,
-	<forestry:planks.fireproof.0:5> : <forestry:logs.fireproof.0:5>,
-	<forestry:planks.fireproof.0:6> : <forestry:logs.fireproof.0:6>,
-	<forestry:planks.fireproof.0:7> : <forestry:logs.fireproof.0:7>,
-	<forestry:planks.fireproof.0:8> : <forestry:logs.fireproof.0:8>,
-	<forestry:planks.fireproof.0:9> : <forestry:logs.fireproof.0:9>,
-	<forestry:planks.fireproof.0:10> : <forestry:logs.fireproof.0:10>,
-	<forestry:planks.fireproof.0:11> : <forestry:logs.fireproof.0:11>,
-	<forestry:planks.fireproof.0:12> : <forestry:logs.fireproof.0:12>,
-	<forestry:planks.fireproof.0:13> : <forestry:logs.fireproof.0:13>,
-	<forestry:planks.fireproof.0:14> : <forestry:logs.fireproof.0:14>,
-	<forestry:planks.fireproof.0:15> : <forestry:logs.fireproof.0:15>,
-	<forestry:planks.fireproof.1> : <forestry:logs.fireproof.1>,
-	<forestry:planks.fireproof.1:1> : <forestry:logs.fireproof.1:1>,
-	<forestry:planks.fireproof.1:2> : <forestry:logs.fireproof.1:2>,
-	<forestry:planks.fireproof.1:3> : <forestry:logs.fireproof.1:3>,
-	<forestry:planks.fireproof.1:4> : <forestry:logs.fireproof.1:4>,
-	<forestry:planks.fireproof.1:5> : <forestry:logs.fireproof.1:5>,
-	<forestry:planks.fireproof.1:6> : <forestry:logs.fireproof.1:6>,
-	<forestry:planks.fireproof.1:7> : <forestry:logs.fireproof.1:7>,
-	<forestry:planks.fireproof.1:8> : <forestry:logs.fireproof.1:8>,
-	<forestry:planks.fireproof.1:9> : <forestry:logs.fireproof.1:9>,
-	<forestry:planks.fireproof.1:10> : <forestry:logs.fireproof.1:10>,
-	<forestry:planks.fireproof.1:11> : <forestry:logs.fireproof.1:11>,
-	<forestry:planks.fireproof.1:12> : <forestry:logs.fireproof.1:12>,
+	<forestry:planks.fireproof.0:4> : <forestry:logs.fireproof.1:0>,
+	<forestry:planks.fireproof.0:5> : <forestry:logs.fireproof.1:1>,
+	<forestry:planks.fireproof.0:6> : <forestry:logs.fireproof.1:2>,
+	<forestry:planks.fireproof.0:7> : <forestry:logs.fireproof.1:3>,
+	<forestry:planks.fireproof.0:8> : <forestry:logs.fireproof.2:0>,
+	<forestry:planks.fireproof.0:9> : <forestry:logs.fireproof.2:1>,
+	<forestry:planks.fireproof.0:10> : <forestry:logs.fireproof.2:2>,
+	<forestry:planks.fireproof.0:11> : <forestry:logs.fireproof.2:3>,
+	<forestry:planks.fireproof.0:12> : <forestry:logs.fireproof.3:0>,
+	<forestry:planks.fireproof.0:13> : <forestry:logs.fireproof.3:1>,
+	<forestry:planks.fireproof.0:14> : <forestry:logs.fireproof.3:2>,
+	<forestry:planks.fireproof.0:15> : <forestry:logs.fireproof.3:3>,
+	<forestry:planks.fireproof.1> : <forestry:logs.fireproof.4>,
+	<forestry:planks.fireproof.1:1> : <forestry:logs.fireproof.4:1>,
+	<forestry:planks.fireproof.1:2> : <forestry:logs.fireproof.4:2>,
+	<forestry:planks.fireproof.1:3> : <forestry:logs.fireproof.4:3>,
+	<forestry:planks.fireproof.1:4> : <forestry:logs.fireproof.5:0>,
+	<forestry:planks.fireproof.1:5> : <forestry:logs.fireproof.5:1>,
+	<forestry:planks.fireproof.1:6> : <forestry:logs.fireproof.5:2>,
+	<forestry:planks.fireproof.1:7> : <forestry:logs.fireproof.5:3>,
+	<forestry:planks.fireproof.1:8> : <forestry:logs.fireproof.6:0>,
+	<forestry:planks.fireproof.1:9> : <forestry:logs.fireproof.6:1>,
+	<forestry:planks.fireproof.1:10> : <forestry:logs.fireproof.6:2>,
+	<forestry:planks.fireproof.1:11> : <forestry:logs.fireproof.6:3>,
+	<forestry:planks.fireproof.1:12> : <forestry:logs.fireproof.7:0>,
 	<forestry:planks.vanilla.fireproof.0> : <forestry:logs.vanilla.fireproof.0>,
 	<forestry:planks.vanilla.fireproof.0:1> : <forestry:logs.vanilla.fireproof.0:1>,
 	<forestry:planks.vanilla.fireproof.0:2> : <forestry:logs.vanilla.fireproof.0:2>,
 	<forestry:planks.vanilla.fireproof.0:3> : <forestry:logs.vanilla.fireproof.0:3>,
-	<forestry:planks.vanilla.fireproof.0:4> : <forestry:logs.vanilla.fireproof.0:4>,
-	<forestry:planks.vanilla.fireproof.0:5> : <forestry:logs.vanilla.fireproof.0:5>
+	<forestry:planks.vanilla.fireproof.0:4> : <forestry:logs.vanilla.fireproof.1:0>,
+	<forestry:planks.vanilla.fireproof.0:5> : <forestry:logs.vanilla.fireproof.1:1>
 };
 
 for output, input in changePlanks {
@@ -184,6 +184,14 @@ val twig = <stevescarts:modulecomponents:73> | <stevescarts:modulecomponents:75>
 recipes.addShaped("stick_1", <minecraft:stick> * 2, [[<ore:plankWood>], [<ore:plankWood>]]);
 recipes.addShapeless("stick_2", <minecraft:stick>, [twig]);
 recipes.addShapeless("stick_3", <minecraft:stick>, [<twilightforest:twilight_plant:8>]);
+recipes.remove(<primal:ironwood_stick>);
+recipes.remove(<primal:yew_stick>);
+recipes.remove(<primal:lacquer_stick>);
+recipes.remove(<primal:corypha_stick>);
+recipes.addShaped(<primal:ironwood_stick>, [[<primal:planks>], [<ore:toolWorkBlade>]]);
+recipes.addShaped(<primal:ironwood_stick>, [[<primal:planks:1>], [<ore:toolWorkBlade>]]);
+recipes.addShaped(<primal:ironwood_stick>, [[<primal:planks:2>], [<ore:toolWorkBlade>]]);
+recipes.addShaped(<primal:ironwood_stick>, [[<primal:planks:3>], [<ore:toolWorkBlade>]]);
 <ore:craftingToolSaw>.add(<primal:bone_saw>);
 <ore:craftingToolSaw>.add(<primal:flint_saw>);
 <ore:craftingToolSaw>.add(<primal:iron_saw>);
@@ -192,7 +200,6 @@ recipes.addShapeless("stick_3", <minecraft:stick>, [<twilightforest:twilight_pla
 <ore:craftingToolSaw>.add(<primal:diamond_saw>);
 <ore:craftingToolSaw>.add(<primal:emerald_saw>);
 <ore:craftingToolSaw>.add(<primal:obsidian_saw>);
-
 recipes.addShaped("oak_planks_1", <minecraft:planks> * 2, [[<ore:craftingToolSaw>], [<stevescarts:modulecomponents:72>]]);
 recipes.addShaped("oak_planks_2", <minecraft:planks> * 64, [[<ore:craftingToolSaw>], [<twilightforest:giant_log>]]);
 recipes.addShaped("oak_planks_3", <minecraft:planks> * 3, [[<quark:vertical_planks:0>], [<quark:vertical_planks:0>], [<quark:vertical_planks:0>]]);
@@ -206,27 +213,12 @@ recipes.addShaped("acacia_planks", <minecraft:planks:4> * 3, [[<quark:vertical_p
 recipes.addShaped("dark_oak_planks", <minecraft:planks:5> * 3, [[<quark:vertical_planks:5>], [<quark:vertical_planks:5>], [<quark:vertical_planks:5>]]);
 
 /*
-<minecraft:planks>
-<minecraft:planks:1>
-<minecraft:planks:2>
-<minecraft:planks:3>
-<minecraft:planks:4>
-<minecraft:planks:5>
-<primal:planks>
-<primal:planks:1>
-<primal:planks:3>
-<redwoods:redwood_planks>
-<redwoods:fir_planks>
-<thaumcraft:plank_greatwood>
-<thaumcraft:plank_silverwood>
-<twilightforest:tower_wood>
-<twilightforest:twilight_oak_planks>
-<twilightforest:canopy_planks>
-<twilightforest:mangrove_planks>
-<twilightforest:dark_planks>
-<twilightforest:time_planks>
-<twilightforest:trans_planks>
-<twilightforest:mine_planks>
-<twilightforest:sort_planks>
-<traverse:fir_planks>
+<primal:logs_split_oak>
+<primal:logs_split_spruce>
+<primal:logs_split_birch>
+<primal:logs_split_jungle>
+<primal:logs_split_acacia>
+<primal:logs_split_bigoak>
+<primal:logs_split_ironwood>
+<primal:logs_split_yew>
 */
