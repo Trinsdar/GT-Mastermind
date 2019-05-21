@@ -189,9 +189,9 @@ recipes.remove(<primal:yew_stick>);
 recipes.remove(<primal:lacquer_stick>);
 recipes.remove(<primal:corypha_stick>);
 recipes.addShaped(<primal:ironwood_stick>, [[<primal:planks>], [<ore:toolWorkBlade>]]);
-recipes.addShaped(<primal:ironwood_stick>, [[<primal:planks:1>], [<ore:toolWorkBlade>]]);
-recipes.addShaped(<primal:ironwood_stick>, [[<primal:planks:2>], [<ore:toolWorkBlade>]]);
-recipes.addShaped(<primal:ironwood_stick>, [[<primal:planks:3>], [<ore:toolWorkBlade>]]);
+recipes.addShaped(<primal:yew_stick>, [[<primal:planks:1>], [<ore:toolWorkBlade>]]);
+recipes.addShaped(<primal:lacquer_stick>, [[<primal:planks:2>], [<ore:toolWorkBlade>]]);
+recipes.addShaped(<primal:corypha_stick>, [[<primal:planks:3>], [<ore:toolWorkBlade>]]);
 <ore:craftingToolSaw>.add(<primal:bone_saw>);
 <ore:craftingToolSaw>.add(<primal:flint_saw>);
 <ore:craftingToolSaw>.add(<primal:iron_saw>);
@@ -203,15 +203,22 @@ recipes.addShaped(<primal:ironwood_stick>, [[<primal:planks:3>], [<ore:toolWorkB
 recipes.addShaped("oak_planks_1", <minecraft:planks> * 2, [[<ore:craftingToolSaw>], [<stevescarts:modulecomponents:72>]]);
 recipes.addShaped("oak_planks_2", <minecraft:planks> * 64, [[<ore:craftingToolSaw>], [<twilightforest:giant_log>]]);
 recipes.addShaped("oak_planks_3", <minecraft:planks> * 3, [[<quark:vertical_planks:0>], [<quark:vertical_planks:0>], [<quark:vertical_planks:0>]]);
+recipes.addShaped("oak_planks_4", <minecraft:planks>, [[<ore:craftingToolSaw>], [<primal:logs_split_oak>]]);
 recipes.addShaped("spruce_planks_1", <minecraft:planks:1> * 2, [[<ore:craftingToolSaw>], [<stevescarts:modulecomponents:74>]]);
 recipes.addShaped("spruce_planks_2", <minecraft:planks:1> * 3, [[<quark:vertical_planks:1>], [<quark:vertical_planks:1>], [<quark:vertical_planks:1>]]);
+recipes.addShaped("spruce_planks_3", <minecraft:planks:1>, [[<ore:craftingToolSaw>], [<primal:logs_split_spruce>]]);
 recipes.addShaped("birch_planks_1", <minecraft:planks:2> * 2, [[<ore:craftingToolSaw>], [<stevescarts:modulecomponents:76>]]);
 recipes.addShaped("birch_planks_2", <minecraft:planks:2> * 3, [[<quark:vertical_planks:2>], [<quark:vertical_planks:2>], [<quark:vertical_planks:2>]]);
+recipes.addShaped("birch_planks_3", <minecraft:planks:2>, [[<ore:craftingToolSaw>], [<primal:logs_split_birch>]]);
 recipes.addShaped("jungle_planks_1", <minecraft:planks:3> * 2, [[<ore:craftingToolSaw>], [<stevescarts:modulecomponents:78>]]);
 recipes.addShaped("jungle_planks_2", <minecraft:planks:3> * 3, [[<quark:vertical_planks:3>], [<quark:vertical_planks:3>], [<quark:vertical_planks:3>]]);
+recipes.addShaped("jungle_planks_3", <minecraft:planks:3>, [[<ore:craftingToolSaw>], [<primal:logs_split_jungle>]]);
 recipes.addShaped("acacia_planks", <minecraft:planks:4> * 3, [[<quark:vertical_planks:4>], [<quark:vertical_planks:4>], [<quark:vertical_planks:4>]]);
+recipes.addShaped("acacia_planks_2", <minecraft:planks:4>, [[<ore:craftingToolSaw>], [<primal:logs_split_acacia>]]);
 recipes.addShaped("dark_oak_planks", <minecraft:planks:5> * 3, [[<quark:vertical_planks:5>], [<quark:vertical_planks:5>], [<quark:vertical_planks:5>]]);
-
+recipes.addShaped("dark_oak_planks_2", <minecraft:planks:5>, [[<ore:craftingToolSaw>], [<primal:logs_split_bigoak>]]);
+recipes.addShaped("ironwood_planks", <primal:planks>, [[<ore:craftingToolSaw>], [<primal:logs_split_ironwood>]]);
+recipes.addShaped("yew_planks", <primal:planks:1>, [[<ore:craftingToolSaw>], [<primal:logs_split_yew>]]);
 /*
 <primal:logs_split_oak>
 <primal:logs_split_spruce>
