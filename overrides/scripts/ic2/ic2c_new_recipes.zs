@@ -95,17 +95,6 @@ recipes.addShaped("teleporter_hub", <ic2:blockmachinehv:6>, [
 val ic2Pump = <ic2:blockmachinelv:11>;
 val denseCopperPlate = <ic2:itemmisc:259>;
 
-
-// Keep   | Personal Tank
-// Remove | Personal Batbox
-// Remove | Personal MFE
-// Remove | Personal MFSU
-// Remove | Electronic Circuit
-// Remove | Advanced Circuit
-// Remove | Raw Carbon Fiber
-// Remove | Carbon Mesh
-// Keep   | Coal Ball
-// Keep   | 3x Coal Chunk
 // Remove | Iron Dust from Copper/Tin
 // Remove | Iridium Plate
 // Remove | Mixed Metal Ingot
@@ -251,379 +240,23 @@ recipes.addShaped("ic2_thermometer", <ic2:itemthermometer>, [
 	[<ore:blockGlass>, <ore:blockGlass>, null]
 ]);
 
-// Keep   | Dyed Painters, CF Walls, CF Wool
-// Remove | Bronze Tools (5)
-// Keep   | Single Use Battery
-// Remove | RE-Battery
-// Remove | Energy Crystal
-// Remove | Lapotron Crystal
-// Remove | PESD
-// Remove | Quantum Accumulator
-// Remove | Big Quantum Accumulator
-// Modify | TFBP - Empty
-
-recipes.addShaped("tfbp_empty", <ic2:itemmisc:401>, [
-	[null, <ore:circuitBasic>, null],
-	[null, <ore:circuitAdvanced>, null],
-	[<minecraft:redstone>, null, <minecraft:redstone>]
-]);
-
-// Modify | TFBP Biome - Empty
-
-recipes.addShaped("tfbp_biome_empty", <ic2:itemmisc:402>, [
-	[null, <ore:circuitAdvanced>, null],
-	[null, <ore:circuitAdvanced>, null],
-	[<minecraft:redstone>, null, <minecraft:redstone>]
-]);
-
-// Keep   | TFBP Variant + Downgrade Recipes
-// Keep   | TFBP Biome Variant + Downgrade Recipes
-// Remove | 2x Base Upgrade
-// Compat | 9x Overclocker Upgrade
-
-recipes.addShapeless("overclocker_upgrade_tr_to_ic2c", <ic2:ic2upgrades:0>, [
-	<techreborn:upgrades:0>
-]);
-
-// Compat | 2x Transformer Upgrade
-
-recipes.addShapeless("transformer_upgrade_tr_to_ic2c", <ic2:ic2upgrades:1>, [
-	<techreborn:upgrades:1>
-]);
-
-// Compat | 2x Energy Storage Upgrade
-
-recipes.addShapeless("energy_storage_upgrade_tr_to_ic2c", <ic2:ic2upgrades:2>, [
-	<techreborn:upgrades:2>
-]);
-
-// Remove | Redstone Sensitivity Upgrade [Used in Induction Furnace]
-// Remove | Redstone Inverter Upgrade [Used in Induction Furnace]
-// Modify | 2x Basic Import Upgrade
-
-recipes.addShaped("basic_import_upgrade", <ic2:ic2upgrades:5>, [
-	[<ore:ingotCopper>, <minecraft:sticky_piston>, <ore:ingotCopper>],
-	[<ore:circuitBasic>, <minecraft:hopper>, <ore:circuitBasic>],
-	[<ore:ingotCopper>, <minecraft:redstone_torch>, <ore:ingotCopper>]
-]);
-
-// Modify | 2x Basic Export Upgrade
-
-recipes.addShaped("basic_export_upgrade", <ic2:ic2upgrades:7>, [
-	[<ore:ingotCopper>, <minecraft:piston>, <ore:ingotCopper>],
-	[<ore:circuitBasic>, <minecraft:hopper>, <ore:circuitBasic>],
-	[<ore:ingotCopper>, <minecraft:redstone_torch>, <ore:ingotCopper>]
-]);
-
-// Modify | 2x Import Upgrade
-
-recipes.addShaped("import_upgrade", <ic2:ic2upgrades:6>, [
-	[null, null, null],
-	[<ore:circuitAdvanced>, <ic2:ic2upgrades:5>, <ore:circuitAdvanced>],
-	[null, <ore:reBattery>, null]
-]);
-
-// Modify | 2x Export Upgrade
-
-recipes.addShaped("export_upgrade", <ic2:ic2upgrades:8>, [
-	[null, null, null],
-	[<ore:circuitAdvanced>, <ic2:ic2upgrades:7>, <ore:circuitAdvanced>],
-	[null, <ore:reBattery>, null]
-]);
-
-// Remove | Round Robin Export Upgrade
-// Modify | Muffler Upgrade [from Machine Block]
-
-recipes.addShaped("muffler_from_machine_block", <ic2:ic2upgrades:9>, [
-	[<ore:blockWool>, <ore:blockWool>, <ore:blockWool>],
-	[<ore:blockWool>, <ore:machineBlockBasic>, <ore:blockWool>],
-	[<ore:blockWool>, <ore:blockWool>, <ore:blockWool>]
-]);
-
-// Remove | Muffler Upgrade [from Base]
-// Keep   | Mute Upgrade
-// Remove | Efficiency Upgrade
-// Remove | 2x Exp Collector Upgrade
-// Remove | Energy Storage Multiplier Upgrade
-// Remove | Loudness Upgrade
-// Remove | Slowness Upgrade
-// Modify | Upgrade Container
-
-recipes.addShaped("upgrade_container", <ic2:itemupgradecontainer>, [
-	[<ore:plateCarbon>, <ore:plateIridiumAlloy>, <ore:plateCarbon>],
-	[<ore:plateIridiumAlloy>, <minecraft:chest>, <ore:plateIridiumAlloy>],
-	[<ore:plateCarbon>, <ore:plateIridiumAlloy>, <ore:plateCarbon>]
-]);
-
-// Remove | Filtered Basic Import Upgrade
-// Remove | 3x Filtered Import Upgrade
-// Remove | Filtered Basic Export Upgrade
-// Remove | 3x Filtered Export Upgrade
-// Remove | 2x Basic Fluid Import Upgrade
-// Remove | 2x Basic Fluid Export Upgrade
-// Remove | Fluid Import Upgrade
-// Remove | Fluid Export Upgrade
-// Remove | Filtered Basic Fluid Import Upgrade
-// Remove | 2x Filtered Fluid Import Upgrade
-// Remove | Filtered Basic Fluid Export Upgrade
-// Remove | 2x Filtered Fluid Export Upgrade
-// Remove | Reactor Track Upgrade
-// Remove | 2x CobbleGen Upgrade
-// Remove | Crafting Upgrade
-// Remove | Quantum Overclocker Upgrade
-// Remove | 2x Efficient Sawblade Upgrade
-// Remove | 2x Durable Sawblade Upgrade
-// Remove | Proximity Booster Module
-// Remove | Wide-Band Boster Module
-// Remove | Armour Priority Module
-// Modify | Basic Field Expansion Module
-
-recipes.addShaped("basic_field_expansion_module", <ic2:itemchargepadupgrade:9>, [
-	[<ore:circuitBasic>, <techreborn:upgrades:0>, <ore:circuitBasic>],
-	[<techreborn:upgrades:0>, <ore:plateAdvancedAlloy>, <techreborn:upgrades:0>],
-	[<ore:circuitBasic>, <techreborn:upgrades:0>, <ore:circuitBasic>]
-]);
-
-// Modify | Field Espansion Module
-
-recipes.addShaped("field_expansion_module", <ic2:itemchargepadupgrade:10>, [
-	[<ore:circuitAdvanced>, <ic2:itemchargepadupgrade:9>, <ore:circuitAdvanced>],
-	[<ic2:itemchargepadupgrade:9>, <ore:plateAdvancedAlloy>, <ic2:itemchargepadupgrade:9>],
-	[<ore:circuitAdvanced>, <ic2:itemchargepadupgrade:9>, <ore:circuitAdvanced>]
-]);
-
-// Modify | Advanced Field Expansion Module
-
-recipes.addShaped("advanced_field_expansion_module", <ic2:itemchargepadupgrade:11>, [
-	[<ore:plateCarbon>, <ic2:itemchargepadupgrade:10>, <ore:plateCarbon>],
-	[<ic2:itemchargepadupgrade:10>, <ore:plateAdvancedAlloy>, <ic2:itemchargepadupgrade:10>],
-	[<ore:plateCarbon>, <ic2:itemchargepadupgrade:10>, <ore:plateCarbon>]
-]);
-
-// Remove | Damage Conversion Module
-// Remove | Crystalizor Upgrade Kit
-// Remove | 2x MFS Unit Upgrade Kit
-// Remove | Lapotronic Upgrade Kit
-// Remove | Fission Upgrade Kit
-// Modify | Automation Upgrade
-
-recipes.addShaped("automation_upgrade", <ic2:inventoryupgrades:0>, [
-	[copperCable, <minecraft:hopper>, copperCable],
-	[<minecraft:hopper>, <ore:circuitBasic>, <minecraft:hopper>],
-	[copperCable, <minecraft:hopper>, copperCable]
-]);
-
-// Modify | Machine Access Upgrade
-
-recipes.addShaped("machine_access_upgrade", <ic2:inventoryupgrades:1>, [
-	[null, <minecraft:trapdoor>, null],
-	[<minecraft:trapdoor>, <ore:machineBlockBasic>, <minecraft:trapdoor>],
-	[null, <minecraft:trapdoor>, null]
-]);
-
-// Modify | Rotation Disabler Upgrade
-
-recipes.addShaped("rotation_disabled_upgrade", <ic2:inventoryupgrades:2>, [
-	[null, <minecraft:compass>, null],
-	[null, <minecraft:redstone_torch>, null],
-	[null, <ore:machineBlockBasic>, null]
-]);
-
-// Keep   | SlotType Upgrade
-// Modify | Slot Access Upgrade
-
-recipes.addShaped("slot_access_upgrade", <ic2:inventoryupgrades:4>, [
-	[<ore:ingotSilver>, <ore:circuitAdvanced>, <ore:ingotSilver>],
-	[<ore:circuitAdvanced>, <ic2:inventoryupgrades:3>, <ore:circuitAdvanced>],
-	[<ore:ingotSilver>, <ore:circuitAdvanced>, <ore:ingotSilver>]
-]);
-
-// Keep   | Slot Side Upgrade 
-// Remove | Redstone Deconductor Upgrade
-// Modify | Slot Diversity Upgrade
-
-recipes.addShaped("slot_diversity_upgrade", <ic2:inventoryupgrades:7>, [
-	[null, <ore:circuitBasic>, null],
-	[<ore:circuitBasic>, <ic2:inventoryupgrades:0>, <ore:circuitBasic>],
-	[null, <ore:circuitBasic>, null]
-]);
-
-// Modify | Stack Diversity Upgrade
-
-recipes.addShaped("stack_diversity_upgrade", <ic2:inventoryupgrades:8>, [
-	[null, <ore:circuitAdvanced>, null],
-	[<ore:circuitAdvanced>, <ic2:inventoryupgrades:0>, <ore:circuitAdvanced>],
-	[null, <ore:circuitAdvanced>, null]
-]);
-
-// Keep   | Item Limiter Upgrade
-// Modify | Stack Limiter Upgrade
-
-recipes.addShapeless("stack_limiter_upgrade", <ic2:inventoryupgrades:10>, [
-	<ic2:inventoryupgrades:8>,
-	<ic2:itemtoolbox:2>,
-	<ore:circuitAdvanced>
-]);
-
-// Modify | 2x Composite Vest
-
-recipes.addShaped("composite_vest_1", <ic2:itemarmoralloychestplate>, [
-	[<ore:plateAdvancedAlloy>, null, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:leather_chestplate>, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:iron_chestplate>, <ore:plateAdvancedAlloy>]
-]);
-
-recipes.addShaped("composite_vest_2", <ic2:itemarmoralloychestplate>, [
-	[<ore:plateAdvancedAlloy>, null, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:iron_chestplate>, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:leather_chestplate>, <ore:plateAdvancedAlloy>]
-]);
-
-// Modify | 2x Composite Boots
-
-recipes.addShaped("composite_boots_1", <ic2:itemarmoralloyboots>, [
-	[null, null, null],
-	[<ore:plateAdvancedAlloy>, <minecraft:leather_boots>, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:iron_boots>, <ore:plateAdvancedAlloy>]
-]);
-
-recipes.addShaped("composite_boots_2", <ic2:itemarmoralloyboots>, [
-	[null, null, null],
-	[<ore:plateAdvancedAlloy>, <minecraft:iron_boots>, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:leather_boots>, <ore:plateAdvancedAlloy>]
-]);
-
-// Modify | 2x Composite Helmet
-
-recipes.addShaped("composite_helmet_1", <ic2:itemarmoralloyhelmet>, [
-	[<ore:plateAdvancedAlloy>, <ore:plateAdvancedAlloy>, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:leather_helmet>, <ore:plateAdvancedAlloy>],
-	[null, <minecraft:iron_helmet>, null]
-]);
-
-recipes.addShaped("composite_helmet_2", <ic2:itemarmoralloyhelmet>, [
-	[<ore:plateAdvancedAlloy>, <ore:plateAdvancedAlloy>, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:iron_helmet>, <ore:plateAdvancedAlloy>],
-	[null, <minecraft:leather_helmet>, null]
-]);
-
-// Modify | 2x Composite Pants
-
-recipes.addShaped("composite_leggings_1", <ic2:itemarmoralloyleggings>, [
-	[<ore:plateAdvancedAlloy>, <ore:plateAdvancedAlloy>, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:leather_leggings>, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:iron_leggings>, <ore:plateAdvancedAlloy>]
-]);
-
-recipes.addShaped("composite_leggings_2", <ic2:itemarmoralloyleggings>, [
-	[<ore:plateAdvancedAlloy>, <ore:plateAdvancedAlloy>, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:iron_leggings>, <ore:plateAdvancedAlloy>],
-	[<ore:plateAdvancedAlloy>, <minecraft:leather_leggings>, <ore:plateAdvancedAlloy>]
-]);
-
-// Remove | Bronze Helmet
-// Remove | Bronze Chestplate
-// Remove | Bronze Leggings
-// Remove | Bronze Boots
-// Modify | NanoSuit Helmet
-
-recipes.addShaped("nanosuit_helmet", <ic2:itemarmornanohelmet>, [
-	[null, null, null],
-	[<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>],
-	[<ore:plateCarbon>, <ore:energyCrystal>, <ore:plateCarbon>]
-]);
-
-// Modify | NanoSuit Bodyarmor
-
-recipes.addShaped("nanosuit_chestplate", <ic2:itemarmornanochestplate>, [
-	[<ore:plateCarbon>, null, <ore:plateCarbon>],
-	[<ore:plateCarbon>, <ore:energyCrystal>, <ore:plateCarbon>],
-	[<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>]
-]);
-
-// Modify | NanoSuit Leggings
-
-recipes.addShaped("nanosuit_leggings", <ic2:itemarmornanolegs>, [
-	[<ore:plateCarbon>, <ore:energyCrystal>, <ore:plateCarbon>],
-	[<ore:plateCarbon>, null, <ore:plateCarbon>],
-	[<ore:plateCarbon>, null, <ore:plateCarbon>]
-]);
-
-// Modify | NanoSuit Boots
-
-recipes.addShaped("nanosuit_boots", <ic2:itemarmornanoboots>, [
-	[null, null, null],
-	[<ore:plateCarbon>, null, <ore:plateCarbon>],
-	[<ore:plateCarbon>, <ore:energyCrystal>, <ore:plateCarbon>]
-]);
-
-// Modify | QuantumSuit Helmet
-
-recipes.addShaped("quantumsuit_helmet", <ic2:itemarmorquantumhelmet>, [
-	[null, <ic2:itemarmornanohelmet>, null],
-	[<ore:plateIridiumAlloy>, <ore:lapotronCrystal>, <ore:plateIridiumAlloy>],
-	[<ore:circuitAdvanced>, <ore:glassReinforced>, <ore:circuitAdvanced>]
-]);
-
-// Modify | QuantumSuit Bodyarmor
-
-recipes.addShaped("quantumsuit_chestplate", <ic2:itemarmorquantumchestplate>, [
-	[<ore:plateAdvancedAlloy>, <ic2:itemarmornanochestplate>, <ore:plateAdvancedAlloy>],
+// Remove | QuantumSuit Bodyarmor
+// Modify | Quantumsuit Jetplate
+recipes.addShaped("quantumsuit_jetplate", <ic2:itemquantumarmorjetpack>, [
+	[<ore:plateAdvancedAlloy>, <gravisuit:advancednanochestplate>, <ore:plateAdvancedAlloy>],
 	[<ore:plateIridiumAlloy>, <ore:lapotronCrystal>, <ore:plateIridiumAlloy>],
 	[<ore:plateIridiumAlloy>, <ore:plateAdvancedAlloy>, <ore:plateIridiumAlloy>]
 ]);
 
-// Modify | QuantumSuit Leggings
-
-recipes.addShaped("quantumsuit_leggings", <ic2:itemarmorquantumlegs>, [
-	[<ore:machineBlockBasic>, <ore:lapotronCrystal>, <ore:machineBlockBasic>],
-	[<ore:plateIridiumAlloy>, <ic2:itemarmornanolegs>, <ore:plateIridiumAlloy>],
-	[<minecraft:glowstone_dust>, null, <minecraft:glowstone_dust>]
-]);
-
-// Modify | QuantumSuit Boots
-
-recipes.addShaped("quantumsuit_boots", <ic2:itemarmorquantumboots>, [
-	[null, null, null],
-	[<ore:plateIridiumAlloy>, <ic2:itemarmornanoboots>, <ore:plateIridiumAlloy>],
-	[<ic2:itemarmorrubboots>, <ore:lapotronCrystal>, <ic2:itemarmorrubboots>]
-]);
-
-// Modify | QuantumSuit BodyJetplate
-
-recipes.addShaped("quantumsuit_bodyjetplate", <ic2:itemquantumarmorjetpack>, [
-	[null, <ic2:itemarmorquantumchestplate>, null],
-	[<ore:circuitAdvanced>, <ic2:itemarmorcombinedjetpack>, <ore:circuitAdvanced>],
-	[null, <ore:lapotronCrystal>, null]
-]);
-
 // Modify | Nuclear QuantumSuit BodyJetplate
 
+val evTransformer = <ic2:blockelectric:11>;
 recipes.addShaped("quantumsuit_nuclear_bodyjetplate", <ic2:itemquantumarmornuclearjetplate>, [
-	[null, <ic2:itemarmorquantumchestplate>, null],
-	[<ore:circuitAdvanced>, <ic2:itemarmornuclearcombindedjetpack>, <ore:circuitAdvanced>],
-	[null, <ore:lapotronCrystal>, null]
+	[<ore:circuitAdvanced>, evTransformer, <ore:circuitAdvanced>],
+	[<ic2:blockchambers:0>, nuclearReactor, <ic2:blockchambers:0>],
+	[<ore:circuitAdvanced>, <ic2:itemquantumarmorjetpack>, <ore:circuitAdvanced>]
 ]);
 
-// Modify | Nightvison Goggles
-
-val advancedHeatExchanger = <ic2:itemheatswtiches:3>;
-recipes.addShaped("nightvision_goggles", <ic2:itemnightvisiongoggles>, [
-	[advancedHeatExchanger, <ic2:itemarmornanohelmet>, advancedHeatExchanger],
-	[<techreborn:lamp_led>, <ore:glassReinforced>, <techreborn:lamp_led>],
-	[<ore:itemRubber>, <ore:circuitAdvanced>, <ore:itemRubber>]
-]);
-
-// Keep   | QuantumSuit Helmet [upgrade : EU Reader]
-// Keep   | QuantumSuit Helmet [upgrade : Cropnalyzer]
-// Keep   | QuantumSuit Helmet [upgrade : Thermometer]
-// Keep   | NanoSuit Helmet [upgrade : EU Reader]
-// Keep   | NanoSuit Helmet [upgrade : Cropnalyzer]
-// Keep   | NanoSuit Helmet [upgrade : Thermometer]
-// Keep   | Scuba Helmet
-// Keep   | Hazmat Suit
-// Keep   | Hazmat Suit Leggings
-// Keep   | Rubber Boots
 // Remove | Bronze Shield
 // Modify | Plated Shield
 
@@ -633,120 +266,39 @@ recipes.addShaped("plated_shield", <ic2:platedshield>, [
 	[<ore:plateAdvancedAlloy>, <ore:plateAdvancedAlloy>, <ore:plateAdvancedAlloy>]
 ]);
 
-// Modify | Nano Shield
-
-recipes.addShaped("nano_shield", <ic2:nanoshield>, [
-	[<ore:plateCarbon>, <ore:energyCrystal>, <ore:plateCarbon>],
-	[<ore:plateCarbon>, <ic2:platedshield>, <ore:plateCarbon>],
-	[<ore:plateCarbon>, <ore:plateCarbon>, <ore:plateCarbon>]
-]);
-
-// Modify | Industrial Belt
-
-recipes.addShaped("industrial_belt", <ic2:itemarmorindustrialbelt>, [
-	[null, null, null],
-	[<ore:itemRubber>, <minecraft:leather>, <minecraft:leather>],
-	[<ore:reBattery>, <ore:reBattery>, <ore:reBattery>]
-]);
-
-// Remove | Industrial Belt to RE-Battery decomposition
 // Modify | BatPack
 
 recipes.addShaped("batpack", <ic2:itemarmorbatpack>, [
 	[<ore:reBattery>, <ore:circuitBasic>, <ore:reBattery>],
-	[<ore:reBattery>, <ore:ingotTin>, <ore:reBattery>],
+	[<ore:reBattery>, <ore:casingTin>, <ore:reBattery>],
 	[<ore:reBattery>, null, <ore:reBattery>]
-]);
-
-// Modify | Lappack
-
-recipes.addShaped("lappack", <ic2:itemarmorlappack>, [
-	[<minecraft:lapis_block>, <ore:circuitAdvanced>, <minecraft:lapis_block>],
-	[<minecraft:lapis_block>, <ic2:itemarmorbatpack>, <minecraft:lapis_block>],
-	[<minecraft:lapis_block>, null, <minecraft:lapis_block>]
-]);
-
-// Modify | Quantum Pack
-
-recipes.addShaped("quantum_pack", <ic2:itemarmorquantumpack>, [
-	[null, <ore:circuitAdvanced>, null],
-	[<ore:plateIridiumAlloy>, <ic2:itemarmorlappack>, <ore:plateIridiumAlloy>],
-	[null, <ore:lapotronCrystal>, null]
 ]);
 
 // Modify | CF Backpack
 
 recipes.addShaped("cf_backpack", <ic2:itemarmorcfpack>, [
 	[<ic2:itemfoamsprayer>, <ore:circuitBasic>, <ic2:itemfoamsprayer>],
-	[<ic2:itemfuelcans>, <ore:ingotTin>, <ic2:itemfuelcans>],
+	[<ic2:itemfuelcans>, <ore:casingTin>, <ic2:itemfuelcans>],
 	[<ic2:itemfuelcans>, null, <ic2:itemfuelcans>]
 ]);
 
 // Remove | Solar Helmet [direct craft]
-// Modify | Solar Helmet [from iron helmet]
 
-val tinCable = <ic2:itemcable:10>;
-recipes.addShaped("solar_helmet", <ic2:itemsolarhelmets>, [
-	[null, <minecraft:iron_helmet>, null],
-	[null, <techreborn:solar_panel>, null],
-	[tinCable, tinCable, tinCable]
-]);
-
-// Modify | Advanced Solar Helmet
-
-recipes.addShaped("advanced_solar_helmet", <ic2:itemsolarhelmets:1>, [
-	[<techreborn:solar_panel>, <techreborn:solar_panel>, <techreborn:solar_panel>],
-	[<techreborn:solar_panel>, <ic2:itemsolarhelmets>, <techreborn:solar_panel>],
-	[<ore:circuitBasic>, copperCable, <ore:circuitBasic>]
-]);
-
-// Keep   | 2x Static Boots
 // Modify | Jetpack
 
 recipes.addShaped("fueled_jetpack", <ic2:itemarmorjetpack>, [
-	[<ore:ingotRefinedIron>, <ore:circuitBasic>, <ore:ingotRefinedIron>],
-	[<ore:ingotRefinedIron>, <ic2:itemfuelcans:0>, <ore:ingotRefinedIron>],
-	[<minecraft:redstone>, null, <minecraft:redstone>]
+	[<ore:plateRefinedIron>, <ore:circuitBasic>, <ore:plateRefinedIron>],
+	[<ore:plateRefinedIron>, <ic2:itemfuelcans:0>, <ore:plateRefinedIron>],
+	[<minecraft:redstone>, <minecraft:elytra>, <minecraft:redstone>]
 ]);
 
 // Modify | Electric Jetpack
 
 recipes.addShaped("electric_jetpack", <ic2:itemarmorjetpackelectric>, [
-	[<ore:ingotRefinedIron>, <ore:circuitAdvanced>, <ore:ingotRefinedIron>],
-	[<ore:ingotRefinedIron>, <techreborn:low_voltage_su>, <ore:ingotRefinedIron>],
-	[<minecraft:glowstone_dust>, null, <minecraft:glowstone_dust>]
+	[<ore:plateRefinedIron>, <ore:circuitAdvanced>, <ore:plateRefinedIron>],
+	[<ore:plateRefinedIron>, <ic2:blockelectric>, <ore:plateRefinedIron>],
+	[<minecraft:glowstone_dust>, <ic2:itemarmorjetpack>, <minecraft:glowstone_dust>]
 ]);
-
-// Modify | Nuclear Jetpack
-
-val evTransformer = <ic2:blockelectric:11>;
-recipes.addShaped("nuclear_jetpack", <ic2:itemarmorjetpacknuclear>, [
-	[<ore:circuitAdvanced>, evTransformer, <ore:circuitAdvanced>],
-	[<ic2:blockchambers:0>, nuclearReactor, <ic2:blockchambers:0>],
-	[<ore:circuitAdvanced>, <ic2:itemarmorjetpackelectric>, <ore:circuitAdvanced>]
-]);
-
-// Modify | 2x Compacted Nuclear Jetpack
-
-recipes.addShaped("compacted_nuclear_jetpack", <ic2:itemarmornuclearcombindedjetpack>, [
-	[null, <ic2:itemarmorcombinedjetpack>, null],
-	[null, <ore:circuitAdvanced>, null],
-	[null, <ic2:itemarmorjetpacknuclear>, null]
-]);
-
-// Modify | Compacted Jetpack
-
-recipes.addShaped("compacted_jetpack", <ic2:itemarmorcombinedjetpack>, [
-	[<ore:circuitAdvanced>, <techreborn:upgrades:1>, <ore:circuitAdvanced>],
-	[<ore:circuitAdvanced>, <ic2:itemarmorbatpack>, <ore:circuitAdvanced>],
-	[<ic2:itemarmorjetpackelectric>, <ic2:itemarmorlappack>, <ic2:itemarmorjetpackelectric>]
-]);
-
-// Keep   | 6x Electric Jetpack [Upgrades]
-// Keep   | 6x Nuclear Jetpack [Upgrades]
-// Keep   | 6x Compacted Jetpack [Upgrades]
-// Keep   | 6x Compacted Nuclear Jetpack [Upgrades]
-// Remove | [Jetpack upgrades involving bronze armor]
 
 // [[ UU Matter Recipes ]]
 // Modify | Cobblestone

@@ -1,7 +1,7 @@
 // Allows Uranium Ore to be processed in the Pulverizer and Industrial Grinder.
 
 val ore = <ic2:blockmetal:2>;
-val product = <ic2:itemmisc:180>;
+val product = <ic2c_extras:uraniumcrushedore>;
 val secondary = <thermalfoundation:material:768>; // Pulverized Coal
 
 mods.thermalexpansion.Pulverizer.addRecipe(product*2, ore, 4000, secondary, 10);
