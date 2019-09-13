@@ -87,9 +87,9 @@ recipes.addShaped("crop_harvester", <ic2:blockmachinemv:11>, [
 val glassCable = <ic2:itemcable:9>;
 val teleporter = <ic2:blockmachinehv:2>;
 recipes.addShaped("teleporter_hub", <ic2:blockmachinehv:6>, [
-	[teleporter, <gtclassic:battery_lapotron_small>, teleporter],
-	[<gtclassic:battery_lapotron_small>, <gtclassic:machine_basicenergystorage_ev>, <gtclassic:battery_lapotron_small>],
-	[teleporter, <gtclassic:battery_lapotron_small>, teleporter]
+	[teleporter, <ore:lapotronCrystal>, teleporter],
+	[<ore:lapotronCrystal>, <gtclassic:aesu>, <ore:lapotronCrystal>],
+	[teleporter, <ore:lapotronCrystal>, teleporter]
 ]);
 
 val ic2Pump = <ic2:blockmachinelv:11>;
@@ -300,295 +300,8 @@ recipes.addShaped("electric_jetpack", <ic2:itemarmorjetpackelectric>, [
 	[<minecraft:glowstone_dust>, <ic2:itemarmorjetpack>, <minecraft:glowstone_dust>]
 ]);
 
-// [[ UU Matter Recipes ]]
-// Modify | Cobblestone
-
-recipes.addShaped("uumatter_cobblestone", <minecraft:cobblestone>*16, [
-	[<techreborn:uumatter>, null, null],
-	[null, null, null],
-	[null, null, null]
-]);
-
-// Remove | Stone
-// Remove | Glass
-// Remove | Grass Block
-// Remove | Oak Wood
-// Modify | Spruce Wood
-
-recipes.addShaped("uumatter_spruce_wood", <minecraft:log:1>*8, [
-	[null, null, <techreborn:uumatter>],
-	[null, null, null],
-	[null, null, null]
-]);
-
-// Modify | Birch Wood
-
-recipes.addShaped("uumatter_birch_wood", <minecraft:log:2>*8, [
-	[null, null, null],
-	[<techreborn:uumatter>, null, null],
-	[null, null, null]
-]);
-
-// Modify | Jungle Wood
-
-recipes.addShaped("uumatter_jungle_wood", <minecraft:log:3>*8, [
-	[null, null, null],
-	[null, null, <techreborn:uumatter>],
-	[null, null, null]
-]);
-
-// Modify | Acacia Wood
-
-recipes.addShaped("uumatter_acacia_wood", <minecraft:log2:0>*8, [
-	[null, null, null],
-	[null, null, null],
-	[<techreborn:uumatter>, null, null]
-]);
-
-// Modify | Dark Oak Wood
-
-recipes.addShaped("uumatter_dark_oak_wood", <minecraft:log2:1>*8, [
-	[null, null, null],
-	[null, null, null],
-	[null, <techreborn:uumatter>, null]
-]);
-
-// Modify | Dirt
-
-recipes.addShaped("uumatter_dirt", <minecraft:dirt>*16, [
-	[null, null, null],
-	[null, null, null],
-	[null, null, <techreborn:uumatter>]
-]);
-
-// Modify | Sponge
-
-recipes.addShaped("uumatter_sponge", <minecraft:sponge>*6, [
-	[null, <techreborn:uumatter>, null],
-	[<techreborn:uumatter>, null, <techreborn:uumatter>],
-	[null, <techreborn:uumatter>, <techreborn:uumatter>]
-]);
-
-// Modify | End Stone
-
-recipes.addShaped("uumatter_end_stone", <minecraft:end_stone>*16, [
-	[null, null, null],
-	[<techreborn:uumatter>, null, <techreborn:uumatter>],
-	[null, <techreborn:uumatter>, <techreborn:uumatter>]
-]);
-
-// Modify | Moss Stone
-
-recipes.addShaped("uumatter_moss_stone", <minecraft:mossy_cobblestone>*16, [
-	[null, null, null],
-	[null, <techreborn:uumatter>, null],
-	[<techreborn:uumatter>, null, <techreborn:uumatter>]
-]);
-
-// Modify | Sandstone
-
-recipes.addShaped("uumatter_sandstone", <minecraft:sandstone>*16, [
-	[null, null, null],
-	[null, null, <techreborn:uumatter>],
-	[null, <techreborn:uumatter>, null]
-]);
-
-// Modify | Red Sandstone
-
-recipes.addShaped("uumatter_red_sandstone", <minecraft:red_sandstone>*16, [
-	[null, null, null],
-	[<techreborn:uumatter>, null, null],
-	[null, <techreborn:uumatter>, null]
-]);
-
-// Remove | Snow
-// Modify | Water
-
-recipes.addShaped("uumatter_water", <ic2:tile.water>, [
-	[null, null, null],
-	[null, <techreborn:uumatter>, null],
-	[null, <techreborn:uumatter>, null]
-]);
-
-// Modify | Lava
-
-recipes.addShaped("uumatter_lava", <ic2:tile.lava>, [
-	[null, <techreborn:uumatter>, null],
-	[null, <techreborn:uumatter>, null],
-	[null, <techreborn:uumatter>, null]
-]);
-
-// Remove | Iron Ore
-// Remove | Gold Ore
-// Remove | Obsidian
-// Modify | Netherrack
-
-recipes.addShaped("uumatter_netherrack", <minecraft:netherrack>*16, [
-	[null, null, <techreborn:uumatter>],
-	[null, <techreborn:uumatter>, null],
-	[<techreborn:uumatter>, null, null]
-]);
-
-// Modify | Nether Wart
-
-recipes.addShaped("uumatter_nether_wart", <minecraft:nether_wart>*32, [
-	[null, <techreborn:uumatter>, <techreborn:uumatter>],
-	[<techreborn:uumatter>, null, null],
-	[null, <techreborn:uumatter>, <techreborn:uumatter>]
-]);
-
-// Remove | Glowstone
-// Remove | Cactus
-// Remove | Vines
-// Modify | Chorus Fruit
-
-recipes.addShaped("uumatter_chorus_fruit", <minecraft:chorus_fruit>*4, [
-	[<techreborn:uumatter>, <techreborn:uumatter>, null],
-	[null, <techreborn:uumatter>, <techreborn:uumatter>],
-	[null, <techreborn:uumatter>, null]
-]);
-
-// Modify | White Wool
-
-recipes.addShaped("uumatter_white_wool", <minecraft:wool:0>*12, [
-	[<techreborn:uumatter>, null, <techreborn:uumatter>],
-	[null, null, null],
-	[null, <techreborn:uumatter>, null]
-]);
-
-// Remove | Coal
-// Remove | Diamond
-// Remove | Emerald
-// Remove | Redstone
-// Modify | Nether Quartz
-
-recipes.addShaped("uumatter_nether_quartz", <minecraft:quartz>*32, [
-	[null, <techreborn:uumatter>, <techreborn:uumatter>],
-	[<techreborn:uumatter>, null, <techreborn:uumatter>],
-	[<techreborn:uumatter>, <techreborn:uumatter>, null]
-]);
-
-// Remove | Lapis Lazuli
-// Remove | Feather
-// Modify | Leather
-
-recipes.addShaped("uumatter_leather", <minecraft:leather>*32, [
-	[<techreborn:uumatter>, null, <techreborn:uumatter>],
-	[<techreborn:uumatter>, <techreborn:uumatter>, <techreborn:uumatter>],
-	[null, null, null]
-]);
-
-// Remove | Snowball
-// Remove | Gunpowder_1
-// Remove | Ender Pearl
-// Remove | Clay
-// Modify | Blaze Rod
-
-recipes.addShaped("uumatter_blaze_rod", <minecraft:blaze_rod>*6, [
-	[null, <techreborn:uumatter>, null],
-	[<techreborn:uumatter>, null, null],
-	[<techreborn:uumatter>, <techreborn:uumatter>, <techreborn:uumatter>]
-]);
-
-// Modify | Prismarine Crystals
-
-recipes.addShaped("uumatter_prismarine_crystals", <minecraft:prismarine_crystals>*16, [
-	[null, <techreborn:uumatter>, <techreborn:uumatter>],
-	[<techreborn:uumatter>, null, <techreborn:uumatter>],
-	[null, <techreborn:uumatter>, null]
-]);
-
-// Modify | Prismarine Shard
-
-recipes.addShaped("uumatter_prismarine_shard", <minecraft:prismarine_shard>*32, [
-	[<techreborn:uumatter>, <techreborn:uumatter>, null],
-	[<techreborn:uumatter>, null, <techreborn:uumatter>],
-	[null, <techreborn:uumatter>, null]
-]);
-
-// Remove | Cocoa Beans
-// Remove | Ink Sac
-// Remove | Sugar Canes
-// Modify | Flint
-
-recipes.addShaped("uumatter_flint", <minecraft:flint>*32, [
-	[null, <techreborn:uumatter>, null],
-	[<techreborn:uumatter>, <techreborn:uumatter>, null],
-	[<techreborn:uumatter>, <techreborn:uumatter>, null]
-]);
-
-// Remove | Bone
-// Modify | Sticky Resin (replaced with Sap)
-
-recipes.addShaped("uumatter_sap", <techreborn:part:31>*21, [
-	[<techreborn:uumatter>, null, <techreborn:uumatter>],
-	[null, null, null],
-	[<techreborn:uumatter>, null, <techreborn:uumatter>]
-]);
-
-// Remove | Iridium Ore
-// Modify | Mycelium
-
-recipes.addShaped("uumatter_mycelium", <minecraft:mycelium>*24, [
-	[null, null, null],
-	[<techreborn:uumatter>, null, <techreborn:uumatter>],
-	[<techreborn:uumatter>, <techreborn:uumatter>, <techreborn:uumatter>]
-]);
-
-// Modify | Chiseled Stone Bricks
-
-recipes.addShaped("uumatter_chiseled_stone_bricks", <minecraft:stonebrick:3>*48, [
-	[<techreborn:uumatter>, <techreborn:uumatter>, null],
-	[<techreborn:uumatter>, <techreborn:uumatter>, null],
-	[<techreborn:uumatter>, null, null]
-]);
-
-// Remove | Copper Ore
-// Remove | Tin Ore
-// Modify | Silver Ore
-
-recipes.addShaped("uumatter_silver_dust", <thermalfoundation:material:66>*10, [
-	[null, <techreborn:uumatter>, null],
-	[<techreborn:uumatter>, null, <techreborn:uumatter>],
-	[<techreborn:uumatter>, <techreborn:uumatter>, null]
-]);
-
-// Remove | Elytra
-
 // TODO: Uranium Cells
-// Keep   | 10k Coolant Cell
-// Keep   | 30k Coolant Cell
-// Remove | 30k Coolant Cell [from stack]
-// Keep   | 60k Coolant Cell
-// Modify | Reactor Plating
 
-recipes.addShapeless("reactor_plating", <ic2:itemreactorplating:0>, [
-	denseCopperPlate,
-	<ore:plateAdvancedAlloy>
-]);
-
-// Keep   | Heat-Capacity Reactor Plating
-// Modify | Containment Reactor Plating
-
-recipes.addShapeless("containment_reactor_plating", <ic2:itemreactorplating:2>, [
-	<ic2:itemreactorplating:0>,
-	<ore:plateAdvancedAlloy>,
-	<ore:plateAdvancedAlloy>
-]);
-
-// Keep   | 2x Neutron Reflector
-// Keep   | Thick Neutron Reflector
-// Modify | Iridium Neutron Reflector, TODO
-
-val thiccNeutronReflector = <ic2:itemreflectors:1>;
-
-recipes.addShaped("ic2c_iridium_neutron_reflector", <ic2:itemreflectors:2>, [
-	[thiccNeutronReflector, thiccNeutronReflector, thiccNeutronReflector],
-	[thiccNeutronReflector, <ore:plateIridiumAlloy>, thiccNeutronReflector],
-	[thiccNeutronReflector, thiccNeutronReflector, thiccNeutronReflector]
-]);
-
-// Keep   | Component Heat Vent
 // Modify | Heating Cell
 
 val lavaCell = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "lava", Amount: 1000}});
@@ -599,27 +312,29 @@ recipes.addShaped("heating_cell", <ic2:reactorheatpack>, [
 	[null, <ic2:itemmisc:259>, null]
 ]);
 
-// Keep   | RSH-Condensator
-// Keep   | LZH-Condensator
 // Modify | Heat Exhanger
 
 recipes.addShaped("heat_exchanger", <ic2:itemheatswtiches:0>, [
 	[null, <ore:circuitBasic>, null],
-	[<ore:ingotTin>, denseCopperPlate, <ore:ingotTin>],
-	[null, <ore:ingotTin>, null]
+	[<ore:plateTin>, denseCopperPlate, <ore:plateTin>],
+	[null, <ore:plateTin>, null]
 ]);
 
-// Keep   | Reactor Heat Exchanger
-// Keep   | Component Heat Exchanger
-// Modify | Advanced Heat Exchanger
+// Modify | Component Heat Exchanger
 
-recipes.addShaped("advanced_heat_exchanger", <ic2:itemheatswtiches:3>, [
-	[glassCable, <ore:circuitBasic>, glassCable],
-	[<ic2:itemheatswtiches:0>, denseCopperPlate, <ic2:itemheatswtiches:0>],
-	[glassCable, <ore:circuitBasic>, glassCable]
+recipes.addShaped("component_heat_exchanger", <ic2:itemheatswtiches:2>, [
+	[null, <ore:plateGold>, null],
+	[<ore:plateGold>, <ic2:itemheatswtiches:0>, <ore:plateGold>],
+	[null, <ore:plateGold>, null]
 ]);
 
-// Keep   | 3x Heat Vent
+// Modify | Heat Vent
+recipes.removeByRecipeName("ic2:shaped_item.reactorvent_-795420664");
+recipes.addShaped("heat_vent", <ic2:itemheatvent:0>, [
+	[<ore:plateRefinedIron>, <minecraft:iron_bars>, <ore:plateRefinedIron>],
+	[<minecraft:iron_bars>, null, <minecraft:iron_bars>],
+	[<ore:plateRefinedIron>, <minecraft:iron_bars>, <ore:plateRefinedIron>]
+]);
 // Keep   | 3x Reactor Heat Vent
 // Keep   | 3x Overclocked Heat Vent
 // Keep   | 3x Advanced Heat Vent
