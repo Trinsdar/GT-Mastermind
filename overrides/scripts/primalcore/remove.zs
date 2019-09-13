@@ -5,7 +5,7 @@ import mods.primal.Smelter;
 
 
 
-static removeAndHide as IOreDictEntry[IItemStack] = {
+static removeAndHideWOredict as IOreDictEntry[IItemStack] = {
 	<primal:iron_dust> : <ore:dustIron>,
 	<primal:iron_plate> : <ore:plateIron>,
 	<primal:steel_ingot> : <ore:ingotSteel>,
@@ -59,12 +59,33 @@ static removeAndHide as IOreDictEntry[IItemStack] = {
 	<primal:tamahagane_nugget> : <ore:nuggetTamahagane>,
 	<primal:tamahagane_dust> : <ore:dustTamahagane>,
 	<primal:tamahagane_ingot> : <ore:ingotTamahagane>,
-	<primal:tamahagane_plate> : <ore:plateTamahagane>
+	<primal:tamahagane_plate> : <ore:plateTamahagane>,
+	<primal:rock_stone> : <ore:rock>,
+	<primal:rock_andesite> : <ore:rock>,
+	<primal:rock_diorite> : <ore:rock>,
+	<primal:rock_granite> : <ore:rock>,
+	<primal:rock_netherrack> : <ore:rock>,
+	<primal:rock_end> : <ore:rock>,
+	<primal:cinis_brick_wet> : <ore:brick>,
+	<primal:cinis_brick_dry> : <ore:brick>,
+	<primal:nether_cloth> : <ore:cloth>,
+	<primal:nether_papyrus> : <ore:paper>,
+	<primal:nether_cordage> : <ore:cordagePlant>,
+	<primal:nether_tinder> : <ore:tinder>
 };
 
-for output, input in removeAndHide {
+for output, input in removeAndHideWOredict {
 	mods.jei.JEI.removeAndHide(output);
 	input.remove(output);
+}
+
+static removeAndHide as IItemStack = {
+	<primal:nether_fiber>,
+	<primal:nether_fiber_pulp>
+}
+
+for item in removeAndHide {
+	mods.jei.JEI.removeAndHide(item);
 }
 
 furnace.remove(<minecraft:iron_ingot>, <primal:iron_dust>);
@@ -96,6 +117,16 @@ furnace.remove(<primal:tamahagane_ingot>);
 <ore:plateSteel>.remove(<primal:tamahagane_plate>);
 
 
+<ore:rockStone>.remove(<primal:rock_stone>);
+<ore:rockAndesite>.remove(<primal:rock_andesite>);
+<ore:rockDiorite>.remove(<primal:rock_diorite>);
+<ore:rockGranite>.remove(<primal:rock_granite>);
+<ore:rockNetherrack>.remove(<primal:rock_netherrack>);
+<ore:rockEnd>.remove(<primal:rock_end>);
+
+<ore:brickWet>.remove(<primal:cinis_brick_wet>);
+<ore:brickDry>.remove(<primal:cinis_brick_dry>);
+<ore:cordageGeneral>.remove(<primal:nether_cordage>);
 
 Smelter.removeRecipe("primal:alloy_electrum");
 Smelter.removeRecipe("primal:alloy_constantan");
