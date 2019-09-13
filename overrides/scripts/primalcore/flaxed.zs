@@ -1,6 +1,6 @@
 mods.primal.Flake.addRecipe(
    "ruby_shard", 
-    50f, 
+    50, 
     0.5f, 
     0.75f, 
     <ore:gemRuby>, 
@@ -8,23 +8,23 @@ mods.primal.Flake.addRecipe(
 );
 mods.primal.Flake.addRecipe(
     "sapphire_shard", 
-    50f, 
+    50, 
     0.5f, 
     0.75f, 
     <ore:gemSapphire>, 
     <contenttweaker:sapphire_shard> * 3
 );
 mods.primal.Flake.addRecipe(
-    "peridot_shard", 
-    50f, 
+    "olivine_shard", 
+    50, 
     0.5f, 
     0.75f, 
-    <ore:gemPeridot>, 
-    <contenttweaker:peridot_shard> * 3
+    <ore:gemOlivine>, 
+    <contenttweaker:olivine_shard> * 3
 );
 mods.primal.Flake.addRecipe(
     "green_sapphire_shard", 
-    50f, 
+    50, 
     0.5f, 
     0.75f, 
     <ore:gemGreenSapphire>, 
@@ -32,7 +32,7 @@ mods.primal.Flake.addRecipe(
 );
 mods.primal.Flake.addRecipe(
     "red_garnet_shard", 
-    50f, 
+    50, 
     0.5f, 
     0.75f, 
     <ore:gemRedGarnet>, 
@@ -40,7 +40,7 @@ mods.primal.Flake.addRecipe(
 );
 mods.primal.Flake.addRecipe(
     "yellow_garnet_shard", 
-    50f, 
+    50, 
     0.5f, 
     0.75f, 
     <ore:gemYellowGarnet>, 
@@ -48,7 +48,7 @@ mods.primal.Flake.addRecipe(
 );
 mods.primal.Flake.addRecipe(
     "ruby_point", 
-    50f, 
+    50, 
     0.5f, 
     0.75f, 
     <contenttweaker:ruby_shard>, 
@@ -56,23 +56,23 @@ mods.primal.Flake.addRecipe(
 );
 mods.primal.Flake.addRecipe(
     "sapphire_point", 
-    50f, 
+    50, 
     0.5f, 
     0.75f, 
     <contenttweaker:sapphire_shard>, 
     <contenttweaker:sapphire_point> * 2
 );
 mods.primal.Flake.addRecipe(
-    "peridot_point", 
-    50f, 
+    "olivine_point", 
+    50, 
     0.5f, 
     0.75f, 
-    <contenttweaker:peridot_shard>, 
-    <contenttweaker:peridot_point> * 2
+    <contenttweaker:olivine_shard>, 
+    <contenttweaker:olivine_point> * 2
 );
 mods.primal.Flake.addRecipe(
     "green_sapphire_point", 
-    50f, 
+    50, 
     0.5f, 
     0.75f, 
     <contenttweaker:green_sapphire_shard>, 
@@ -80,7 +80,7 @@ mods.primal.Flake.addRecipe(
 );
 mods.primal.Flake.addRecipe(
     "red_garnet_point", 
-    50f, 
+    50, 
     0.5f, 
     0.75f, 
     <contenttweaker:red_garnet_shard>, 
@@ -88,7 +88,7 @@ mods.primal.Flake.addRecipe(
 );
 mods.primal.Flake.addRecipe(
     "yellow_garnet_point", 
-    50f, 
+    50, 
     0.5f, 
     0.75f, 
     <contenttweaker:yellow_garnet_shard>, 
