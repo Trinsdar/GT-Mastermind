@@ -59,41 +59,62 @@ static removeAndHideWOredict as IOreDictEntry[][IItemStack] = {
 	<primal:tamahagane_nugget> : [<ore:nuggetTamahagane>],
 	<primal:tamahagane_dust> : [<ore:dustTamahagane>],
 	<primal:tamahagane_ingot> : [<ore:ingotTamahagane>],
-	<primal:tamahagane_plate> : [<ore:plateTamahagane>],
+	<primal:tamahagane_plate> : [<ore:plateTamahagane>, <ore:plateSteel>],
 	<primal:rock_stone> : [<ore:rock>, <ore:rockStone>],
 	<primal:rock_andesite> : [<ore:rock>, <ore:rockAndesite>],
 	<primal:rock_diorite> : [<ore:rock>, <ore:rockDiorite>],
 	<primal:rock_granite> : [<ore:rock>, <ore:rockGranite>],
 	<primal:rock_netherrack> : [<ore:rock>,<ore:rockNetherrack>],
 	<primal:rock_end> : [<ore:rock>, <ore:rockEnd>],
-	<primal:cinis_brick_wet> : [<ore:brick>, <ore:brickWet>],
-	<primal:cinis_brick_dry> : [<ore:brick>, <ore:brickDry>],
-	<primal:nether_cloth> : [<ore:cloth>],
-	<primal:nether_papyrus> : [<ore:paper>],
-	<primal:nether_cordage> : [<ore:cordagePlant>, <ore:cordageGeneral>],
 	<primal:nether_tinder> : [<ore:tinder>],
 	<primal:muck> : [<ore:slimeball>],
 	<primal:muck_molten> : [<ore:slimeball>],
-	<primal:paraffin_clump> : [<ore:dyeBrown>],
 	<primal:slag> : [<ore:itemSlag>, <ore:crystalSlag>],
-	<primal:corypha_stick> : [<ore:stickWood>],
-	<primal:corypha_pin> : [<ore:pinWood>, <ore:pinBasic>],
-	<primal:bark_corypha> : [<ore:barkWood>],
-	<primal:barrel_corypha_lid> : [<ore:lidBarrel>],
-	<primal:logs_split_corypha> : [<ore:logSplit>],
-	<primal:opal_knapp> : [<ore:flake>],
-	<primal:opal_point> : [<ore:flake>],
 	<primal:inferum_ground> : [<ore:dyeRed>],
 	<primal:plant_fiber> : [<ore:fiberPlant>],
-	<primal:daucus_murn_fronds_withered> : [<ore:thatchingDry>, <ore:plantPaper>], 
+	<primal:void_seed> : [<ore:seed>, <ore:seedGrassInaris>],
 	<primal:void_cordage> : [<ore:cordageGeneral>, <ore:cordageQuality>],
-	<primal:sinuous_cordage> : [<ore:cordageGeneral>, <ore:cordageQuality>],
-	<primal:nether_root> : [<ore:seed>],
-	<primal:daucus_murn_seeds> : [<ore:seed>],
-	<primal:valus_seed> : [<ore:seed>],
-	<primal:corypha_seed> : [<ore:seed>],
-	<primal:devils_tongue_tendril> : [<ore:seed>]
+	<primal:bone_hatchet> : [<ore:toolHatchet>, <ore:toolHatchetBone>, <ore:toolAxe>],
+	<primal:flint_hatchet> : [<ore:toolHatchet>, <ore:toolHatchetFlint>, <ore:toolAxe>],
+	<primal:quartz_hatchet> : [<ore:toolHatchet>, <ore:toolHatchetQuartz>, <ore:toolAxe>],
+	<primal:obsidian_hatchet> : [<ore:toolHatchet>, <ore:toolHatchetObsidian>, <ore:toolAxe>],
+	<primal:opal_hatchet> : [<ore:toolHatchet>, <ore:toolHatchetOpal>, <ore:toolAxe>],
+	<primal:emerald_hatchet> : [<ore:toolHatchet>, <ore:toolHatchetEmerald>, <ore:toolAxe>],
+	<primal:diamond_hatchet> : [<ore:toolHatchet>, <ore:toolHatchetDiamond>, <ore:toolAxe>],
+	<primal:flint_axe> :[<ore:toolAxeFlint>, <ore:toolAxe>],
+	<primal:emerald_axe> : [<ore:toolAxe>, <ore:toolAxeEmerald>],
+	<primal:diamond_axe> : [<ore:toolAxeDiamond>, <ore:toolAxe>],
+	<primal:bone_shears> : [<ore:toolShears>],
+	<primal:flint_shears> : [<ore:toolShears>],
+	<primal:emerald_workblade> : [<ore:itemFoodCutter>, <ore:toolWorkBladeEmerald>, <ore:toolWorkBlade>],
+	<primal:emerald_saw> : [<ore:toolSaw>, <ore:toolSawGem>],
+	<primal:diamond_plate> : [<ore:plateDiamond>],
+	<primal:obsidian_plate> : [<ore:plateObsidian>],
+	<primal:carbon_plate> : [<ore:plateCarbon>],
+	<primal:crude_iron_plate> : [<ore:plateCrudeIron>],
+	<primal:crude_iron_dust> : [<ore:dustCrudeIron>],
+	<primal:crude_iron_ingot> : [<ore:ingotCrudeIron>],
+	<primal:crude_iron_nugget> : [<ore:nuggetCrudeIron>],
+	<primal:iron_bloom> : [<ore:bloomIron>],
+	<primal:steel_nugget> : [<ore:nuggetSteel>],
+	<primal:wootz_nugget> : [<ore:nuggetWootz>],
+	<primal:wootz_dust> : [<ore:dustWootz>],
+	<primal:wootz_ingot> : [<ore:ingotWootz>],
+	<primal:wootz_plate> : [<ore:plateWootz>],
+	<primal:tamahagane_bloom> : [<ore:bloomTamahagane>],
+	<primal:adamant_nugget> : [<ore:nuggetAdamant>],
+	<primal:adamant_dust> : [<ore:dustAdamant>],
+	<primal:adamant_ingot> : [<ore:ingotAdamant>],
+	<primal:adamant_plate> : [<ore:plateAdamant>],
+	<primal:vanadium_nugget> : [<ore:nuggetVanadium>],
+	<primal:vanadium_dust> : [<ore:dustVanadium>],
+	<primal:vanadium_ingot> : [<ore:ingotVanadium>],
+	<primal:vanadium_plate> : [<ore:plateVanadium>]
 };
+
+
+
+
 
 for output, input in removeAndHideWOredict {
 	mods.jei.JEI.removeAndHide(output);
@@ -103,22 +124,61 @@ for output, input in removeAndHideWOredict {
 }
 
 static removeAndHide as IItemStack[] = [
-	<primal:nether_fiber>,
-	<primal:nether_fiber_pulp>,
-	<primal:adobe_clump>,
 	<primal:fermented_jungle>,
-	<primal:arrow_torch_nether>,
 	<primal:arrow_water>,
-	<primal:opal>,
 	<primal:plant_tinder>,
-	<primal:daucus_murn_fronds>,
 	<primal:void_fiber>,
-	<primal:thatching_nether>,
+	<primal:void_grass>,
 	<primal:mortar>,
 	<primal:hibachi>,
 	<primal:hibachi:1>,
 	<primal:hibachi:2>,
-	<primal:hibachi:3>
+	<primal:hibachi:3>,
+	<primal:drying_rack>,
+	<primal:drying_rack:1>,
+	<primal:drying_rack:2>,
+	<primal:drying_rack:3>,
+	<primal:drying_rack:4>,
+	<primal:drying_rack:5>,
+	<primal:drying_rack:6>,
+	<primal:drying_rack:7>,
+	<primal:drying_rack:8>,
+	<primal:drying_rack:9>,
+	<primal:brick_mold>,
+	<primal:brick_mold:1>,
+	<primal:brick_mold:2>,
+	<primal:brick_mold:3>,
+	<primal:brick_mold:4>,
+	<primal:brick_mold:5>,
+	<primal:brick_mold:6>,
+	<primal:brick_mold:7>,
+	<primal:brick_mold:8>,
+	<primal:brick_mold:9>,
+	<primal:flint_pickaxe>,
+	<primal:flint_shovel>,
+	<primal:flint_hoe>,
+	<primal:diamond_pickaxe>,
+	<primal:diamond_shovel>,
+	<primal:diamond_hoe>,
+	<primal:emerald_pickaxe>,
+	<primal:emerald_shovel>,
+	<primal:emerald_hoe>,
+	<primal:sword_crude_flint>,
+	<primal:sword_crude_wootz>,
+	<primal:smelter_lid_mud>,
+	<primal:smelter_lid_adobe>,
+	<primal:smelter_lid_terra>,
+	<primal:smelter_lid_cinis>,
+	<primal:smelter>,
+	<primal:smelter:1>,
+	<primal:smelter:2>,
+	<primal:smelter:3>,
+	<primal:kiln_adobe>,
+	<primal:kiln_air>,
+	<primal:bone_pickaxe>,
+	<primal:bone_shovel>,
+	<primal:bone_hoe>,
+	<primal:sword_crude_bone>
 ];
 
 for item in removeAndHide {
@@ -151,7 +211,6 @@ furnace.remove(<primal:platinum_ingot>, <primal:platinum_plate>);
 furnace.remove(<primal:zinc_ingot>, <primal:zinc_dust>);
 furnace.remove(<primal:zinc_ingot>, <primal:zinc_plate>);
 furnace.remove(<primal:tamahagane_ingot>);
-<ore:plateSteel>.remove(<primal:tamahagane_plate>);
 
 
 
@@ -164,7 +223,19 @@ Smelter.removeRecipe("primal:plate_shibuichi");
 Smelter.removeRecipe("primal:plate_tamahagane");
 
 
-mods.primal.Hibachi..removeAll();
+mods.primal.Hibachi.removeAll();
+mods.primal.DryingRack.removeAll();
+
+
+
+
+
+
+
+
+
+
+
 
 
 

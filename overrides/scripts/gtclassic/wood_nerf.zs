@@ -192,14 +192,16 @@ recipes.addShaped(<primal:ironwood_stick>, [[<primal:planks>], [<ore:toolWorkBla
 recipes.addShaped(<primal:yew_stick>, [[<primal:planks:1>], [<ore:toolWorkBlade>]]);
 recipes.addShaped(<primal:lacquer_stick>, [[<primal:planks:2>], [<ore:toolWorkBlade>]]);
 recipes.addShaped(<primal:corypha_stick>, [[<primal:planks:3>], [<ore:toolWorkBlade>]]);
-<ore:craftingToolSaw>.add(<primal:bone_saw>);
-<ore:craftingToolSaw>.add(<primal:flint_saw>);
-<ore:craftingToolSaw>.add(<primal:iron_saw>);
-<ore:craftingToolSaw>.add(<primal:quartz_saw>);
-<ore:craftingToolSaw>.add(<primal:copper_saw>);
-<ore:craftingToolSaw>.add(<primal:diamond_saw>);
-<ore:craftingToolSaw>.add(<primal:emerald_saw>);
-<ore:craftingToolSaw>.add(<primal:obsidian_saw>);
+<ore:craftingToolSaw>.add(saw(<primal:bone_saw>));
+<ore:craftingToolSaw>.add(saw(<primal:flint_saw>));
+<ore:craftingToolSaw>.add(saw(<primal:iron_saw>));
+<ore:craftingToolSaw>.add(saw(<primal:quartz_saw>));
+<ore:craftingToolSaw>.add(saw(<primal:copper_saw>));
+<ore:craftingToolSaw>.add(saw(<primal:diamond_saw>));
+<ore:craftingToolSaw>.add(saw(<primal:obsidian_saw>));
+function saw(stack as IItemStack) as IItemStack{
+	return stack.anyDamage();
+}
 recipes.addShaped("oak_planks_1", <minecraft:planks> * 2, [[<ore:craftingToolSaw>], [<stevescarts:modulecomponents:72>]]);
 recipes.addShaped("oak_planks_2", <minecraft:planks> * 64, [[<ore:craftingToolSaw>], [<twilightforest:giant_log>]]);
 recipes.addShaped("oak_planks_3", <minecraft:planks> * 3, [[<quark:vertical_planks:0>], [<quark:vertical_planks:0>], [<quark:vertical_planks:0>]]);
