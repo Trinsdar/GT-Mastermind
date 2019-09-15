@@ -78,7 +78,8 @@
 						"weight": 5
 					},
 					{
-						"name": "gtclassic:galena_ore",
+						"name": "techreborn:ore",
+						"metadata" : 0,
 						"weight": 10
 					}
 				],
@@ -113,7 +114,8 @@
 						"weight": 5
 					},
 					{
-						"name": "gtclassic:galena_ore",
+						"name": "techreborn:ore",
+						"metadata" : 0,
 						"weight": 10
 					}
 				],
