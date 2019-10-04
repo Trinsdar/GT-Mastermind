@@ -2,6 +2,7 @@ import mods.pyrotech.DryingRack;
 import mods.pyrotech.StoneKiln;
 import mods.pyrotech.BrickKiln;
 import mods.pyrotech.GraniteAnvil;
+import mods.pyrotech.IroncladAnvil;
 import crafttweaker.item.IItemStack;
 
 
@@ -117,4 +118,10 @@ recipes.addShaped("bone_hoe", <pyrotech:bone_hoe>, [[<primal:bone_knapp>, <prima
 <ore:bricksStone>.add(<primal:nether_stone:3>);
 <ore:bricksStone>.add(<primal:scoria_stone:3>);
 GraniteAnvil.removeRecipes(<pyrotech:material:16>);
-GraniteAnvil.addRecipe("masonry_brick", <pyrotech:material:16> * 4, <ore:bricksStone>, 1, "pickaxe", true);
+GraniteAnvil.addRecipe("masonry_brick", <pyrotech:material:16> * 4, <ore:bricksStone>, 4, "pickaxe", true);
+IroncladAnvil.addRecipe("quartz_shard", <primal:quartz_knapp> * 2, <ore:gemQuartz>, 4, "pickaxe");
+IroncladAnvil.addRecipe("quartz_point", <primal:quartz_point> * 2, <ore:flakeQuartz>, 4, "pickaxe");
+IroncladAnvil.addRecipe("flint_point", <primal:flint_point> * 2, <ore:flakeFlint>, 4, "pickaxe");
+IroncladAnvil.addRecipe("bone_point", <primal:bone_point> * 2, <ore:flakeBone>, 4, "pickaxe");
+
+

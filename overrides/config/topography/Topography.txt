@@ -1,0 +1,26 @@
+//If this file is deleted, a new set of default configs will be generated.
+
+//Sets if the mod should print documentation.
+printDocumentation(false)
+
+//Sets the Topography WorldType as default
+setAsDefaultWorldType()
+
+//Registers a preset. First argument is name, second is the image name, third is a description, fourth is WorldType, fifth is generator options Json.
+rtgNether = registerPreset("RTG-Realistic Nether.", "images/Nether", "RTG world type except the spawn dimension is the nether, not the overworld.", "RTG")
+
+rtgTwilight = registerPreset("RTG-Realistic Twilight.", "images/Nether", "RTG world type except the spawn dimension is the twilight forest, not the overworld.", "RTG")
+
+defaultNether = registerPreset("Default Nether.", "images/Nether", "Default world type except the spawn dimension is the nether, not the overworld.", "default")
+
+defaultTwilight = registerPreset("Default Twilight.", "images/Nether", "Default world type except the spawn dimension is the twilight forest, not the overworld.", "default")
+
+largeBiomesNether = registerPreset("Large Biomes Nether.", "images/Nether", "Large Biomes world type except the spawn dimension is the nether, not the overworld.", "largeBiomes")
+
+largeBiomesTwilight = registerPreset("Large Biomes Twilight.", "images/Nether", "Large Biomes world type except the spawn dimension is the twilight forest, not the overworld.", "largeBiomes")
+
+amplifiedNether = registerPreset("Amplified Nether.", "images/Nether", "Amplified world type except the spawn dimension is the nether, not the overworld.", "amplified")
+
+amplifiedTwilight = registerPreset("Amplified Twilight.", "images/Nether", "Amplified world type except the spawn dimension is the twilight forest, not the overworld.", "amplified")
+
+
