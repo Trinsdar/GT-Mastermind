@@ -1,0 +1,74 @@
+[
+  {
+    "internalOreName": "gtclassic:iridium_ore",
+    "meta": 0,
+    "overlay": "gtclassic:ores/iridium",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "gtclassic:sheldonite_ore",
+    "meta": 0,
+    "overlay": "gtclassic:ores/sheldonite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "gtclassic:ruby_ore",
+    "meta": 0,
+    "overlay": "gtclassic:ores/ruby",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "gtclassic:sapphire_ore",
+    "meta": 0,
+    "overlay": "gtclassic:ores/sapphire",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "gtclassic:bauxite_ore",
+    "meta": 0,
+    "overlay": "gtclassic:ores/bauxite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "gtc_expansion:olivine_overworld_ore",
+    "meta": 0,
+    "overlay": "gtclassic:ores/olivine",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "gtc_expansion:cassiterite_ore",
+    "meta": 0,
+    "overlay": "gtclassic:ores/cassiterite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "gtc_expansion:tetrahedrite_ore",
+    "meta": 0,
+    "overlay": "gtclassic:ores/tetrahedrite",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "gtc_expansion:galena_ore",
+    "meta": 0,
+    "overlay": "gtclassic:ores/galena",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  }
+]
